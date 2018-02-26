@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{index}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%\usepackage{kpfonts}
+\usepackage{fourier}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Sarah Kaddah}
+\title{Rapport de stage}
+
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%1ere page%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \begin{sffamily}
+  \begin{center}
+	\large{Master 2 Biologie-Informatique/ Bioinformatique \hfill 2017-2018}
+	\flushleft{\large{Université Paris Diderot - Paris 7}}
+	\begin{center}
+		\includegraphics[scale=0.3]{img/m2.png} \hfill
+		\includegraphics[scale=0.1]{img/p7.png}
+	\end{center}
+%%%%%%%%% Title    
+    \HRule \\[0.4cm]
+    { \huge \bfseries \center{Etude de la fonction et des mécanismes d'évolution des séquences répétées centromériques chez le primate}\\[0.4cm] }
+    \HRule %\\[2cm]
+%%%%%%%%Centre de la page    
+\begin{center}\LARGE{\textbf{Sarah Kaddah}}\end{center}
+\begin{center}\Large{Tuteur: Loic Ponger}\end{center}~\\[0.5cm]
+%%%%%%%%% Bottom of the page
+\center{\large{Structure et Instabilité des Génomes}}
+\center{\large{ MNHN - CNRS UMR 7196 / INSERM U1154 - Sorbonne Universités}}\\[1cm]
+	\begin{center}
+		\includegraphics[scale=0.2]{img/mnhn.jpg} \hfill
+		\includegraphics[scale=0.08]{img/cnrs.png} \hfill
+		\includegraphics[scale=0.08]{img/inserm.jpg}
+	\end{center} 
+%%%%%%%%% END
+  \end{center}
+  \end{sffamily}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%Remerciements%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\section*{\begin{center}Remerciements\end{center}}~\\[0.2cm]
+\addcontentsline{toc}{chapter}{Remerciements}
+Merci à Namrod pour toute la partie sur la bibliographie. Retrouvez ses questions FAQ qui ont permis la rédaction de cette partie.\\
+\noindent Merci à f-leb, LittleWhite et Metalman pour leurs conseils et la relecture.
+\noindent Merci à ced et jacques\_jean pour la correction orthographique et typographique.
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%Résumé & Abstract%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage 
+\section*{Résumé}~\\[0.2cm]
+Votre résumé commence ici...
+   ...
+\section*{Abstract}~\\[0.2cm]
+ Abstract begins here...
+   ...
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%Introduction%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{Introduction}
+\subsection{Les séquences centromériques}
+Le centromère est une structure chromatinienne caractérisé par la présence de CENP-A. Cette protéine, très conservée au cours de l'évolution, est un variant de l'histone H3. Son rôle est de fixer la position du kinétochore par un mécanisme encore peu connu. En effet, le centromère est le site d'assemblage du kinétochore, un ensemble d'ADN et de protéines. Il joue un rôle important durant la division cellulaire chez les eucaryotes en permettant l'attachement du fuseau mitotique pour la ségrégation des chromosomes. Le centromère et les protéines impliquées sont relativement bien conservés. Au contraire, l'ADN sous-jacent est très diversifié et l'organisation varie d'un taxon à l'autre. Cependant, une caractéristique commune est retrouvée chez toute les espèces: de l'ADN centromérique répété en tandem nommé ADN satellite. Ces séquences représentent 5\% du génome. Les répétitions s'étendent de 7pb à 3,2kb avec des séquences de 145-180kb le plus souvent.  
+
+\subsection{L'ADN $\alpha$-satellites}
+L'ADN satellite chez les Primates est connu sous le nom d'$\alpha$-satellite. Ces séquences centromériques répétées en tandem, riches en AT, sont issues d'un évènement d'amplification. Un monomère a une longueur de 171pb et il peut être répété des milliers de fois. Les monomères peuvent être répartis en famille selon leur similarité, les séquences ayant un taux d'identité supérieur à 70\%. Ces séquences ont soit une organisation monomérique soit une organisation en répétition d'ordre supérieur. Dans le premier cas, les séquences d'une même famille sont répétés en tandem. Dans le deuxème cas, une suite de monomères appartenant à différentes familles forme une unité, qui elle est répétée en tandem. Ces séquences peuvent avoir un site de liaison à la protéine centromérique CENP-B reconnaît la CENP-B box, un motif spécifique de 17pb. Cette protéine, qui reconnaît et se fixe sur l'ADN, serait présente chez de nombreuses familles de primates. La protéine pJ$\alpha$, une protéine peu caractérisée, reconnaît un motif qui remplace la CENP-B box.
+
+Les $\alpha$-satellites ont essentiellement été étudiées chez l'homme. Modèle évolutif avec les centromères en expansion. Une hypothèse concernant l'âge des séquences découle de ces recherches: les séquences les plus récentes apparaissent au coeur du centromères, déplançant les plus anciennes au péricentromère. D'autres études chez le gorille ont été faites. Le rôle des $\alpha$-satellites est encore mal connu. 
+
+\begin{figure}
+\center
+\includegraphics[height=5cm, width=10cm]{img/organization.png}
+\caption{Organisation spatiale des $\alpha$-satellites. Une couleur correspond à un monomère d'une famille. Les points rouges représentent les sites de fixation à CENP-B.}
+\end{figure}
+
+
+\subsection{Le sujet de stage}
+enchaîne sur l'étude chez les cerco, une autre étude de séquençage haut débit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%M & M%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Matériel et méthode}
+\subsection{Choix des espèces}
+\subsection{Méthode de classification}
+\subsection{Alignement, phylogénie et consensus}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Résultat}
+\section{Discussion}
+\section{Conclusion}
+
+
+%
+%	\makeindex % index général
+%   \newindex{env}{enx}{end}{Environnements}
+%   \newindex{ext}{exx}{exd}{Extensions}
+%   \newindex{cmm}{cmx}{cmd}{Commandes}
+%	\newcommand{\commande}[1]
+%   {\texttt{\textbackslash #1}}
+%	\newcommand{\indexcmm}[1]
+%   {\index[cmm]{#1@\commande{#1}}} % index d'une commande
+% 
+%
+%
+%
+%Une citation\index{citation} hors paragraphe
+%se met dans un environnement
+%\emph{quote}\index[env]{quote}
+%ou \emph{quotation}\index[env]{quotation}
+% 
+%L'extension \emph{array}\index[ext]{array}
+%fournit les commandes
+%\commande{raggedleft}\indexcmm{raggedleft}
+%et \commande{raggedright}\indexcmm{raggedright}.
+% 
+%\printindex % index général
+%\printindex[env]
+%\printindex[ext]
+%\printindex[cmm]
+
+\end{document}
+
+%HELP: http://lataix-sebastien.developpez.com/tutoriels/latex/memoire-de-fin-d-etude/#LII-C
