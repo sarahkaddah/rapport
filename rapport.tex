@@ -148,7 +148,17 @@ Les critères de sélections dépendent de la disponibilité des séquences de q
 %Le choix des espèces suivantes, le \textit{Macaca fascicularis} et le \textit{Chlorocebus sabaeus}, est fait selon la qualité des reads, obtenus par séquençage haut débit. En effet, les séquences doivent avoir une taille assez longue, soit au minimum 170 pb. Toutes ces espèces sont relativement proches, dans le but de faire des comparaisons inter-espèce par la suite.
  
 \subsection{Méthode de classification}
-\subsection{Alignement, phylogénie et consensus}
+
+Cette méthode [f.jornod] répartit des séquences $\alpha$-satellites en familles selon la similarité. La classification est hiérarchique dichotomique. Les séquences sont séparées en fonction de la fréquence des k-mers qui composent les séquences. Cette valeur k est déterminée à 5 à partir des études sur les \textit{Cercopithèques}. Elle décrit la diversité des séquences en optimisant l'usage de la mémoire. Une table de 5-mers est calculée pour toutes les séquences en début de programme.
+
+La classification est suivie d'une double validation des sous-groupes. D'une part la taille du sous-groupe est vérifiée. La taille minimale d'une famille est fixée à 100. Si un groupe atteint 100 séquences, il n'est pas redivisé. D'autre part les deux groupes doivent être distincts. Pour cela le matepair est évalué. C'est la proportion de monomères ayant son plus proche voisin dans le même groupe. Des valeurs matepairs élevées indiquent des sous-groupes bien homogènes et séparés validant la classification tandis qu’un seuil matepair plus faible entraînera plus de classes. Si les matepairs sont au dessus d’un certain seuil, les deux sous-groupes sont ajoutés séparément à la file pour être potentiellement redivisés ultérieurement.En revanche, si au moins une des valeurs de matepair est au dessous de ce seuil, les sous-groupes seront considérés comme formant un seul groupe et le groupe initial est sauvegardé comme une famille unique. 
+
+La séparation des séquences se fait de façon itérative en boucle. Chaque tour implique une analyse en composante principale (ACP), une classification hiérarchique et une analyse discriminante linéaire (LDA) si le jeu de données est conséquent. L'ACP est faite sur la table des k-mers pour réduire les dimensions du jeu de données en minimisant la perte d'information et obtenir des variables indépendantes utilisables pour la LDA. Le nombre de composantes est fixé à 1024. Ensuite des distances euclidiennes sont calculées entre toutes les paires de séquences dans l’espace défini par les M premières composantes de l’ACP. Puis la méthode de classification hiérarchique de Ward forme des classes de façon à minimiser l’inertie interclasse. Cependant, si le jeu de données dépasse 110 000 séquences, le calcul des distances devient pesant. La LDA entre alors en jeu. Cette méthode d'apprentissage utilise un sous-jeu de données formé par des séquences tirées aléatoirement. Le modèle construit est appliqué sur toutes les séquences.
+
+%Ce programme, qui prend des séquence fasta en entrée, a été appliqué à des séquences humaines pour valider la méthodes.
+%Le matepair correspond au nombre de séquences ayant la séquence la plus proche dans le même sous-groupes.
+
+\subsection{Alignement, consensus et phylogénie}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
