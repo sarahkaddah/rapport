@@ -133,9 +133,9 @@ Ces séquences peuvent avoir un site de liaison à la protéine centromérique C
 Les $\alpha$-satellites ont essentiellement été étudiées chez l'homme. Modèle évolutif avec les centromères en expansion. Une hypothèse concernant l'âge des séquences découle de ces recherches: les séquences les plus récentes apparaissent au coeur du centromères, déplançant les plus anciennes au péricentromère. D'autres études chez le gorille ont été faites. Le rôle des $\alpha$-satellites est encore mal connu. 
 
 \begin{figure}
-\center
-\includegraphics[height=3.5cm, width=11cm]{img/AS_organization.png}
-\caption{Organisation spatiale des $\alpha$-satellites. Le coeur du centromère (bleu foncé) est organisé en répétition d'ordre supérieur. Le péricentromère(bleu clair) a une organisation monomérique. Un monomère d'une même famille est représenté par une petite flèche de même couleur. Les points rouges représentent les sites de fixation à CENP-B ou pJ$\alpha$.}
+	\center
+		\includegraphics[height=3.5cm, width=12cm]{img/AS_organization.png}
+		\caption{\textbf{Organisation spatiale des $\alpha$-satellites:} Le coeur du centromère (bleu foncé) est organisé en répétition d'ordre supérieur. Le péricentromère(bleu clair) a une organisation monomérique. Un monomère d'une même famille est représenté par une petite flèche de même couleur. Les points rouges représentent les sites de fixation à CENP-B ou pJ$\alpha$.}
 \end{figure}
 
 
@@ -162,11 +162,13 @@ Les critères de sélections dépendent de la disponibilité des séquences de q
  
 \subsection{Méthode de classification}
 
-Cette méthode [f.jornod] répartit des séquences $\alpha$-satellites en familles selon la similarité. La classification est hiérarchique dichotomique. Les séquences sont séparées en fonction de la fréquence des k-mers qui composent les séquences. Cette valeur k est déterminée à 5 à partir des études sur les \textit{Cercopithèques}. Elle décrit la diversité des séquences en optimisant l'usage de la mémoire. Une table de 5-mers est calculée pour toutes les séquences en début de programme.
+%Cette méthode [f.jornod] répartit des séquences $\alpha$-satellites en familles selon la similarité. La classification est hiérarchique dichotomique. Les séquences sont séparées en fonction de la fréquence des k-mers qui composent les séquences. Cette valeur k est déterminée à 5 à partir des études sur les \textit{Cercopithèques}. Elle décrit la diversité des séquences en optimisant l'usage de la mémoire. Une table de 5-mers est calculée pour toutes les séquences en début de programme.
 
-La classification est suivie d'une double validation des sous-groupes. D'une part la taille du sous-groupe est vérifiée. La taille minimale d'une famille est fixée à 100. Si un groupe atteint 100 séquences, il n'est pas redivisé. D'autre part les deux groupes doivent être distincts. Pour cela le matepair est évalué. C'est la proportion de monomères ayant son plus proche voisin dans le même groupe. Des valeurs matepairs élevées indiquent des sous-groupes bien homogènes et séparés validant la classification tandis qu’un seuil matepair plus faible entraînera plus de classes. Si les matepairs sont au dessus d’un certain seuil, les deux sous-groupes sont ajoutés séparément à la file pour être potentiellement redivisés ultérieurement.En revanche, si au moins une des valeurs de matepair est au dessous de ce seuil, les sous-groupes seront considérés comme formant un seul groupe et le groupe initial est sauvegardé comme une famille unique. 
+Cette méthode [f.jornod] répartit des séquences $\alpha$-satellites en familles selon la similarité. La classification est hiérarchique dichotomique. Dans un premier temps, les séquences sont séparées en fonction de la fréquence des 5-mers qui composent les séquences, d'après les études sur les \textit{Cercopithèques}.
 
-La séparation des séquences se fait de façon itérative en boucle. Chaque tour implique une analyse en composante principale (ACP), une classification hiérarchique et une analyse discriminante linéaire (LDA) si le jeu de données est conséquent. L'ACP est faite sur la table des k-mers pour réduire les dimensions du jeu de données en minimisant la perte d'information et obtenir des variables indépendantes utilisables pour la LDA. Le nombre de composantes est fixé à 1024. Ensuite des distances euclidiennes sont calculées entre toutes les paires de séquences dans l’espace défini par les M premières composantes de l’ACP. Puis la méthode de classification hiérarchique de Ward forme des classes de façon à minimiser l’inertie interclasse. Cependant, si le jeu de données dépasse 110 000 séquences, le calcul des distances devient pesant. La LDA entre alors en jeu. Cette méthode d'apprentissage utilise un sous-jeu de données formé par des séquences tirées aléatoirement. Le modèle construit est appliqué sur toutes les séquences.
+La classification est suivie d'une double validation des sous-groupes. D'une part la taille du sous-groupe est vérifiée. La taille minimale d'une famille est fixée à 100. Si un groupe atteint 100 séquences, il n'est pas redivisé. D'autre part les deux groupes doivent être distincts. Pour cela le \textit{matepair} est évalué. C'est la proportion de monomères ayant son plus proche voisin dans le même groupe. Des valeurs \textit{matepairs} élevées indiquent des sous-groupes bien homogènes et séparés validant la classification tandis qu’un seuil \textit{matepair} plus faible entraîne plus de classes. Si les \textit{matepairs} sont au dessus d’un certain seuil, les deux sous-groupes sont ajoutés séparément à la file pour être potentiellement redivisés ultérieurement.En revanche, si au moins une des valeurs de \textit{matepair} est au dessous de ce seuil, les sous-groupes sont considérés comme formant un seul groupe et le groupe initial est sauvegardé comme une famille unique. 
+
+La séparation des séquences se fait de façon itérative en boucle. Chaque tour implique une analyse en composante principale (ACP), une classification hiérarchique et une analyse discriminante linéaire (LDA) si le jeu de données est conséquent. L'ACP est faite sur la table des 5-mers pour réduire les dimensions du jeu de données en minimisant la perte d'information et obtenir des variables indépendantes utilisables pour la LDA. Le nombre de composantes est fixé à 1024. Ensuite des distances euclidiennes sont calculées entre toutes les paires de séquences dans l’espace défini par les M premières composantes de l’ACP. Puis la méthode de classification hiérarchique de Ward forme des classes de façon à minimiser l’inertie interclasse. Cependant, si le jeu de données dépasse 110 000 séquences, le calcul des distances devient pesant. La LDA entre alors en jeu. Cette méthode d'apprentissage utilise un sous-jeu de données formé par des séquences tirées aléatoirement. Le modèle construit est appliqué sur toutes les séquences.
 
 %Ce programme, qui prend des séquence fasta en entrée, a été appliqué à des séquences humaines pour valider la méthodes.
 %Le matepair correspond au nombre de séquences ayant la séquence la plus proche dans le même sous-groupes.
@@ -181,17 +183,31 @@ La séparation des séquences se fait de façon itérative en boucle. Chaque tou
 		Le laboratoire a effectué un séquençage sur les \textit{C. solatus} et \textit{pogonias}. Les séquences $\alpha$-satellites obtenues sont divisées en nucléotides de 5-mers, puis triées par Analyse de Classification Hiérarchique (HCA) et par Analyse Discriminante Linéaire (LDA). Chez le \textit{C. solatus}[article 1 de Laurianne] deux grandes familles monomériques (C1 et C2) et un HOR d'ordre 2, composé des familles C3 et C4, sont identifiés. Chez le \textit{C. pogonias}[article2 de Laurianne], deux familles supplémentaires (C5 et C6) ont été détectées. Ces \textit{Cercopithèques} ne disposent pas du site de fixation pour la protéine CENP-B. Au contraire, le site de fixation pour la protéine pJ$\alpha$ est présent dans 85\% des $\alpha$-satellites en moyenne, excepté la famille C3 qui n'en possède pas.  
 		\subsubsection{Comparaison des familles}
 		
-argumentation pour C1archi divisé:		C1 est localisée dans le centromère. C2 se trouve dans le péricentromère et serait plus ancienne et moins homogène.
-C3/C4 non traités chez pogo, cependant le dimère n'a pas été traité
-		
-Mes res:\\
--nb de familles, nb de grandes fam\\
--nb de monomères par fam.-> représentation hist\\
--perte en info\\
--répartition de la nouvelle classification -> ACP\\
--sites de fixation
-		
-		
+Le programme identifie 13 et 14 familles chez le \textit{C. solatus} et \textit{pogonias} respectivement. Seules les familles de plus de 100 séquences sont conservées. Cette sélection implique 6,99\% et 1.63\% en perte d'information pour ces deux espèces. Les séquences restantes, n'ayant pas été classées dans une famille assez grande ou étant peut-être des séquences atypiques, ne sont pas prises en compte dans l'analyse. 
+
+Le \textit{C.solatus} a deux grandes familles de 82911 et 9216 monomères, une classe intermédiaire de 1519,1267 et 898 séquences. Le \textit{C.pogonias} a 3 grandes familles d'$\alpha$-satellites qui ont 94594, 8319 et 5202 séquences, deux familles intermédiaires de 998 et 664 monomères. Les familles restantes ont quelques centaines de séquences et sont très petites comparées au familles citées ci-dessus. Une ACP permet de visualiser et de comparer les familles (Figure 2). 
+
+La famille C1 est divisée en plusieurs familles pour les deux espèces.La famille C2 péricentromérique est retrouvée chez les deux espèces et forme un complexe homogène. Les dimères sont une famille d'une centaine de monomères. La famille C3 est retrouvée chez le \textit{C.pogonias} seulement, bien qu'elle n'ait pas été étudiée dans les études du \textit{C.pogonias}. La famille C4 n'est pas détectée. Cette famille a probablement été divisée en petites classes. Elles ne sont donc pas détectées. La famille C5 est retrouvée. C6 et C1 ont été classé comme étant une même famille. 
+
+%\begin{figure}
+%	\center
+%		\includegraphics[height=3.5cm, width=12cm]{img/AS_organization.png}
+%		\caption{\textbf{Organisation spatiale des $\alpha$-satellites:} Le coeur du centromère (bleu foncé) est organisé en répétition d'ordre supérieur. Le péricentromère(bleu clair) a une organisation monomérique. Un monomère d'une même famille est représenté par une petite flèche de même couleur. Les points rouges représentent les sites de fixation à CENP-B ou pJ$\alpha$.}
+%\end{figure}
+
+\begin{figure}	
+\begin{tabular}{cc}
+% \hspace*{0.5cm} &  
+\includegraphics[scale=0.5]{img/Cso_acp_pm090_rapport.png}
+\end{tabular}
+\hfill
+\begin{tabular}{c}
+\includegraphics[scale=0.5]{img/Cp_acp_pm090_rapport.png}
+\end{tabular}
+%\hspace*{1cm}
+\caption{ACP des 5-mers chez \textit{C.solatus} (à gauche) et \textit{C.pogonias} (à droite) : Les familles communes sont C1 (orange) et C2 (royalblue).  C3 (seagreen) et C5 (olivedrab) sont visibles seulement chez pogonias. Les familles qui divisent C1 sont la 2 (green), 73 (red) et 177 (purple)et chez pogonias la 11 (mediumblue) et 51 (mediumorchid).} 
+\end{figure}
+
 \section{Discussion}
 \section{Conclusion}
 
