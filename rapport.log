@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.11)  14 MAY 2018 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.11)  17 MAY 2018 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,94 +1037,80 @@ File: img/arbre_especes.png Graphic file (type png)
 Package pdftex.def Info: img/arbre_especes.png used on input line 160.
 (pdftex.def)             Requested size: 199.15857pt x 128.03107pt.
  [3 <./img/arbre_especes.png>]
-<img/matepair.png, id=41, 935.495pt x 245.91875pt>
-File: img/matepair.png Graphic file (type png)
- <use img/matepair.png>
-Package pdftex.def Info: img/matepair.png used on input line 170.
-(pdftex.def)             Requested size: 227.62094pt x 71.13074pt.
-
-Overfull \hbox (1.86125pt too wide) in paragraph at lines 177--180
-\T1/futs/m/n/12 par l'équipe. Les mo-tifs CENP-B (TTCGTTG-GAA[AG]CGGGA), PJ$\FM
-L/futmi/m/it/12 $ \T1/futs/m/n/12 (TTCCTTTT[CT]CACC[AG]TAG)
+Overfull \hbox (2.47092pt too wide) in paragraph at lines 170--171
+[]\T1/futs/m/n/12 L'étape sui-vante est une double va-li-da-tion des sous-group
+es. D'une part la taille du sous-groupe
  []
 
-[4 <./img/matepair.png>] [5] <img/ACP1.png, id=50, 1181.41376pt x 567.11874pt>
-File: img/ACP1.png Graphic file (type png)
+[4] <img/ACP_experimental.png, id=45, 1153.30875pt x 523.9575pt>
+File: img/ACP_experimental.png Graphic file (type png)
 
-<use img/ACP1.png>
-Package pdftex.def Info: img/ACP1.png used on input line 195.
-(pdftex.def)             Requested size: 472.55713pt x 226.84348pt.
- <img/ACP2.png, id=51, 1124.2pt x 495.8525pt>
-File: img/ACP2.png Graphic file (type png)
+<use img/ACP_experimental.png>
+Package pdftex.def Info: img/ACP_experimental.png used on input line 187.
+(pdftex.def)             Requested size: 461.31532pt x 209.57928pt.
 
-<use img/ACP2.png>
-Package pdftex.def Info: img/ACP2.png used on input line 196.
-(pdftex.def)             Requested size: 449.67204pt x 198.33748pt.
- <img/ACP3.png, id=52, 1116.17pt x 491.8375pt>
-File: img/ACP3.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
-<use img/ACP3.png>
-Package pdftex.def Info: img/ACP3.png used on input line 197.
-(pdftex.def)             Requested size: 446.4601pt x 196.7315pt.
-
-Overfull \hbox (23.56424pt too wide) in paragraph at lines 194--199
-[][] 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 199.
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 189.
+[5] <img/ACP_solatus_1.png, id=49, 1170.3725pt x 525.965pt>
+File: img/ACP_solatus_1.png Graphic file (type png)
 
-LaTeX Warning: Float too large for page by 40.76576pt on input line 200.
+<use img/ACP_solatus_1.png>
+Package pdftex.def Info: img/ACP_solatus_1.png used on input line 199.
+(pdftex.def)             Requested size: 468.1407pt x 210.38226pt.
 
+<img/ACP_solatus_2.png, id=50, 1178.4025pt x 521.95pt>
+File: img/ACP_solatus_2.png Graphic file (type png)
 
-Overfull \hbox (1.547pt too wide) in paragraph at lines 207--208
-[]\T1/futs/m/n/12 Le la-bo-ra-toire a ef-fec-tué un sé-quen-çage sur les \T1/fu
-ts/m/it/12 C. so-la-tus \T1/futs/m/n/12 et \T1/futs/m/it/12 po-go-nias\T1/futs/
-m/n/12 . Les sé-quences $\FML/futmi/m/it/12 $\T1/futs/m/n/12 -satellites
+<use img/ACP_solatus_2.png>
+Package pdftex.def Info: img/ACP_solatus_2.png used on input line 200.
+(pdftex.def)             Requested size: 471.35265pt x 208.77629pt.
+
+<img/ACP_pogonias_1.png, id=51, 1160.335pt x 521.95pt>
+File: img/ACP_pogonias_1.png Graphic file (type png)
+
+<use img/ACP_pogonias_1.png>
+Package pdftex.def Info: img/ACP_pogonias_1.png used on input line 208.
+(pdftex.def)             Requested size: 464.12578pt x 208.77629pt.
+
+<img/ACP_pogonias_2.png, id=52, 574.145pt x 521.95pt>
+File: img/ACP_pogonias_2.png Graphic file (type png)
+
+<use img/ACP_pogonias_2.png>
+Package pdftex.def Info: img/ACP_pogonias_2.png used on input line 209.
+(pdftex.def)             Requested size: 229.65393pt x 208.77629pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--212
+
  []
 
-[6] [7 <./img/ACP1.png> <./img/ACP2.png> <./img/ACP3.png>]
-<img/Cso_acp_pm090_rapport.png, id=63, 481.8pt x 481.8pt>
-File: img/Cso_acp_pm090_rapport.png Graphic file (type png)
-
-<use img/Cso_acp_pm090_rapport.png>
-Package pdftex.def Info: img/Cso_acp_pm090_rapport.png used on input line 224.
-(pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
-
-<img/Cp_acp_pm090_rapport.png, id=64, 481.8pt x 481.8pt>
-File: img/Cp_acp_pm090_rapport.png Graphic file (type png)
-
-<use img/Cp_acp_pm090_rapport.png>
-Package pdftex.def Info: img/Cp_acp_pm090_rapport.png used on input line 228.
-(pdftex.def)             Requested size: 240.8994pt x 240.8994pt.
-
-Overfull \hbox (23.98593pt too wide) in paragraph at lines 222--231
-[][]  [] 
- []
-
-(./rapport.bbl [8 <./img/Cso_acp_pm090_rapport.png (PNG copy)> <./img/Cp_acp_pm
-090_rapport.png (PNG copy)>]) [9] [10] (./rapport.aux) ) 
+[6 <./img/ACP_experimental.png>] [7 <./img/ACP_solatus_1.png> <./img/ACP_solatu
+s_2.png>] [8 <./img/ACP_pogonias_1.png> <./img/ACP_pogonias_2.png>] [9]
+[10] (./rapport.bbl) [11] [12] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 5336 strings out of 493105
- 71701 string characters out of 6137072
- 138239 words of memory out of 5000000
+ 5335 strings out of 493105
+ 71746 string characters out of 6137072
+ 138267 words of memory out of 5000000
  8632 multiletter control sequences out of 15000+600000
  106013 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,30p,1080b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/tex
-mf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.
-enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/adobe/utopia/putri8a.pfb>
-Output written on rapport.pdf (13 pages, 1606365 bytes).
+ 38i,12n,30p,1179b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/
+fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ado
+be/utopia/putri8a.pfb>
+Output written on rapport.pdf (15 pages, 2004445 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

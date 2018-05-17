@@ -4,7 +4,7 @@
 Robert~C. Edgar.
 \newblock Muscle : multiple sequence alignment with high accuracy and high
   through-put.
-\newblock {\em Nucleic acids research}, vol. 32(no. 5):pp. 1792–1797, 2004.
+\newblock {\em Nucleic acids research}, 32(5):1792–1797, 2004.
 
 \bibitem{rapport_florence}
 Florence Jornod.
@@ -28,5 +28,10 @@ Masatoshi~Nei Naruya~Saitou.
 Alan~Bleasby Peter~Rice, Ian~Longden.
 \newblock Emboss : the european molecular biology open software suite.
 \newblock 2000.
+
+\bibitem{phyml}
+Olivier~Gascuel Stéphane~Guindon.
+\newblock Estimating maximum likelihood phylogenies with phyml.
+\newblock {\em Bioinformatics for DNA Sequence Analysis}, 537:113--137, 2009.
 
 \end{thebibliography}
