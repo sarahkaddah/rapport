@@ -14,8 +14,8 @@
 \contentsline {section}{\numberline {3}R\IeC {\'e}sultat}{5}
 \contentsline {subsection}{\numberline {3.1}Caract\IeC {\'e}risaton des familles dans plusieurs esp\IeC {\`e}ces}{5}
 \contentsline {subsubsection}{\numberline {3.1.1}Identification des familles}{5}
-\contentsline {subsubsection}{\numberline {3.1.2}Motifs CENP-B, pJ$\alpha $ et pK$\beta $}{9}
-\contentsline {subsubsection}{\numberline {3.1.3}Similarit\IeC {\'e} entre familles}{9}
-\contentsline {subsection}{\numberline {3.2}Comparaison inter-esp\IeC {\`e}ce et m\IeC {\'e}canismes d'\IeC {\'e}volution}{9}
-\contentsline {section}{\numberline {4}Discussion}{9}
-\contentsline {section}{\numberline {5}Conclusion}{9}
+\contentsline {subsubsection}{\numberline {3.1.2}Motifs CENP-B, pJ$\alpha $ et pK$\beta $}{8}
+\contentsline {subsubsection}{\numberline {3.1.3}Similarit\IeC {\'e} entre familles}{8}
+\contentsline {subsection}{\numberline {3.2}Comparaison inter-esp\IeC {\`e}ce et m\IeC {\'e}canismes d'\IeC {\'e}volution}{8}
+\contentsline {section}{\numberline {4}Discussion}{8}
+\contentsline {section}{\numberline {5}Conclusion}{8}
