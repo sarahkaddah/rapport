@@ -169,6 +169,11 @@ Cette méthode \cite{rapport_florence} répartit des séquences $\alpha$-satelli
 Une Analyse en Composante Principale (ACP) est effectuée sur la table de fréquence des 5-mers afin de réduire les dimensions du jeu de données et d’obtenir des variables indépendantes. Des distances euclidiennes sont calculées entre toutes les paires de séquence dans l’espace défini par les M premières composantes de l’ACP. A partir du calcul de distance, les séquences sont séparées en deux classes en utilisant la classification hiérarchique basée sur la méthode de Ward. La classification hiérarchique permet de former des classer de façon à maximiser l’inertie interclasse. Cette étape fait un usage important de la mémoire. Par conséquent, pour traiter des jeux de données importants, l’Analyse Discriminante Linéaire , une méthode d’apprentissage, est utilisée sur un sous jeu de données formé par des séquences tirées aléatoirement. Le modèle construit est alors appliqué sur toutes les séquences.
 	\subsubsection{Validation d'un sous-groupe}
 L'étape suivante est une double validation des sous-groupes. D'une part la taille du sous-groupe est vérifiée. La taille minimale d'une famille est fixée à 100. Si un groupe atteint 100 séquences, il n'est pas redivisé. D'autre part les deux groupes doivent être distincts. Pour cela le \textit{matepair}, la proportion de monomères ayant son plus proche voisin dans le même groupe, est évalué. Des valeurs \textit{matepairs} élevées indiquent des sous-groupes bien homogènes et séparés validant la classification tandis qu’un seuil \textit{matepair} plus faible entraîne plus de classes. Si les \textit{matepairs} sont au-dessus d’un certain seuil, les deux sous-groupes sont ajoutés séparément à la file pour être potentiellement redivisés ultérieurement.En revanche, si au moins une des valeurs de \textit{matepair} est au dessous de ce seuil, les sous-groupes sont considérés comme formant un seul groupe et le groupe initial est sauvegardé comme une famille unique.Si la classification est valide, les deux sous-groupes sont ajoutés dans la file, sinon le groupe initial est sauvegardé comme une classe unique. 
+	\subsubsection{Paramétrage}
+Faut-il donner explicitement les paramètres? Je peux donner ceux de l'intra-classification et ceux de la super-classification. 
+	-PM:0.90\\
+	-pour les grands jeux de données, lda à 100 000
+	-Taille minimale d'une famille: 100 séquences pour la classification et 20 pour la super-classification
 
 \subsection{Alignement, consensus et phylogénie}
 L'alignement des séquence est fait avec muscle \cite{muscle}. La phylogénie est reconstruite avec Seaview 
@@ -227,7 +232,7 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 \end{figure}			
 			La protéine CENP-B est présente chez toutes les espèces, mais les \textit{Cercopithèques} ne possèdent pas son site de liaison. Cette assertion est vérifiée par l'absence de pourcentage pour ce motif dans les graphes. \textit{C. sabaeus} et \textit{M. fascicularis} n'ont pas ce motif non plus.
 			
-			Au contraire, la protéine pJ$\alpha$ est très présente chez \textit{C. solatus}, en moyenne a 90\%, et \textit{C. pogonias}, en moyenne à 85\%. La plus grande famille, C1, ayant plus de 80 000 séquences, se démarque avec un pourcentage à  95\%. \textit{C. sabaeus} et \textit{M. fascicularis} ont des pourcentages pour le motif pJ$\alpha$ qui varie entre 1\% et 97\%. Parmi ces familles, \textit{C. sabaeus} a une grande famille de 2 200 séquences qui possède très peu ce motif. Le \textit{M. fascicularis} deux grandes familles, de 20 000 et 40 000 séquences ont ce motif à 97\%. 
+			Au contraire, la protéine pJ$\alpha$ est très présente chez \textit{C. solatus}, en moyenne a 90\%, et \textit{C. pogonias}, en moyenne à 85\%. La plus grande famille, C1, ayant plus de 80 000 séquences, se démarque avec un pourcentage à  95\%. \textit{C. sabaeus} et \textit{M. fascicularis} ont des pourcentages pour le motif pJ$\alpha$ qui varie entre 1\% et 97\%. Parmi ces familles, \textit{C. sabaeus} a une grande famille de 2 200 séquences qui possède très peu ce motif. Le \textit{M. fascicularis} deux grandes familles, de 20 000 et 40 000 séquences ont ce motif à 97\%. Le motif pJ$alpha$ est bien préservé chez les primates.
 			
 			Le motif pK$\beta$ est présent lorsque pJ$\alpha$ est absent de la famille. Il est absent chez \textit{C. pogonias}. Une seule famille a ce motif à 80\% chez \textit{C. solatus}, la famille C3,  et chez \textit{C. sabaeus} . \textit{M. fascicularis} a deux grandes familles de plus de 10 000 séquences et plus de 60 000 séquences qui ont respectivement 80\% et 95\% le motif. Ce motif 
 			
@@ -247,8 +252,21 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 	\textit{C. solatus} et \textit{C. pogonias} ont un pourcentage de divergence qui est relativement faible qui ne dépasse pas les 15\%. La  famille C1 a un pourcentage de divergence très faible de 5\%. Cette grande famille de plus de 80 000 séquences est donc probablement une famille récente.  \textit{C. pogonias} a d'autres familles qui ont un pourcentage en dessous de 5\%.
 	\textit{C. sabaeus} a les pourcentages de divergence les plus élevés, allant jusque 28\%, quelque soit la taille de la famille. Cette espèce a des familles anciennes d'$\alpha$-satellites ou alors cette divergence est le résultat d'erreurs de séquençages. Le \textit{M. fascicularis} a des poucentages de divergence qui varient entre 5\% et 27\%. 3 grandes familles ayant plus de 10 000 séquences ont un pourcentage de divergence qui se rapproche de 5\%. Ces familles sont probablement récentes.
 	
-	\subsection{Comparaison inter-espèce et mécanismes d'évolution}
+	Taille moyenne des consensus:\\ Mais ça revient à quoi de savoir ça?\\
+	-c. pogonias: 184\\
+	-c. solatus: 206\\
+	-c. sabaeus: 203\\
+	-m. fascicularis: 208\\
 
+Transition??
+-
+
+	
+	\subsection{Comparaison inter-espèce et mécanismes d'évolution}
+	\subsubsection{Répartition des super-familles}
+				Pour étudier les mécanismes d'évolution des $\alpha$-satellites, une classification inter-espèce permet de comprendre la différences. Pour chaque espèce, 100 séquences par famille sont tirées aléatoirement. La classification est effectuée sur ce jeu de données composées de toutes les grandes familles $\alpha$-satellites de chaques espèce. La taille minimale d'une famille est fixée à 20 séquences. Le terme utilisé pour décrire cette classification inter-espèce est "super-classification".
+	\subsubsection{Mécanisme d'évolution des familles ayant pK$\beta$}
+	Parmi les familles $\alpha$-satellites, toutes celles qui ont le motif pK$\beta$ sont sélectionnées pour regarder comment elles s'assemblent durant la super-classification. 
 
 \section{Discussion}
 \section{Conclusion}

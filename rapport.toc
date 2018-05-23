@@ -10,12 +10,15 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Principe}{4}
 \contentsline {subsubsection}{\numberline {2.2.2}R\IeC {\'e}partition it\IeC {\'e}rative}{4}
 \contentsline {subsubsection}{\numberline {2.2.3}Validation d'un sous-groupe}{4}
+\contentsline {subsubsection}{\numberline {2.2.4}Param\IeC {\'e}trage}{5}
 \contentsline {subsection}{\numberline {2.3}Alignement, consensus et phylog\IeC {\'e}nie}{5}
 \contentsline {section}{\numberline {3}R\IeC {\'e}sultat}{5}
 \contentsline {subsection}{\numberline {3.1}Caract\IeC {\'e}risaton des familles dans plusieurs esp\IeC {\`e}ces}{5}
 \contentsline {subsubsection}{\numberline {3.1.1}Identification des familles}{5}
-\contentsline {subsubsection}{\numberline {3.1.2}Motifs CENP-B, pJ$\alpha $ et pK$\beta $}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}Motifs CENP-B, pJ$\alpha $ et pK$\beta $}{7}
 \contentsline {subsubsection}{\numberline {3.1.3}Similarit\IeC {\'e} entre familles}{10}
 \contentsline {subsection}{\numberline {3.2}Comparaison inter-esp\IeC {\`e}ce et m\IeC {\'e}canismes d'\IeC {\'e}volution}{11}
-\contentsline {section}{\numberline {4}Discussion}{11}
-\contentsline {section}{\numberline {5}Conclusion}{11}
+\contentsline {subsubsection}{\numberline {3.2.1}R\IeC {\'e}partition des super-familles}{11}
+\contentsline {subsubsection}{\numberline {3.2.2}M\IeC {\'e}canisme d'\IeC {\'e}volution des familles ayant pK$\beta $}{11}
+\contentsline {section}{\numberline {4}Discussion}{12}
+\contentsline {section}{\numberline {5}Conclusion}{12}

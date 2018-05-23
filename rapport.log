@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.11)  22 MAY 2018 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.11)  23 MAY 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,135 +1095,145 @@ s/m/n/12 , et deux es-pèces proches
 File: img/ACP_experimental.png Graphic file (type png)
 
 <use img/ACP_experimental.png>
-Package pdftex.def Info: img/ACP_experimental.png used on input line 186.
+Package pdftex.def Info: img/ACP_experimental.png used on input line 191.
 (pdftex.def)             Requested size: 461.31532pt x 209.57928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 188.
-
-Overfull \hbox (12.9092pt too wide) in paragraph at lines 191--192
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 193.
+[5]
+Overfull \hbox (12.9092pt too wide) in paragraph at lines 196--197
 \T1/futs/m/n/12 zaines de mil-liers de sé-quences. Seules les fa-milles ayant p
 lus de 100 sé-quences, ap-pe-lées "grandes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-[5] <img/solatus_ACP1.png, id=49, 567.11874pt x 509.905pt>
+[6 <./img/ACP_experimental.png>]
+<img/solatus_ACP1.png, id=54, 567.11874pt x 509.905pt>
 File: img/solatus_ACP1.png Graphic file (type png)
 
 <use img/solatus_ACP1.png>
-Package pdftex.def Info: img/solatus_ACP1.png used on input line 198.
+Package pdftex.def Info: img/solatus_ACP1.png used on input line 203.
 (pdftex.def)             Requested size: 198.49452pt x 178.46942pt.
 
-<img/pogonias_ACP1.png, id=50, 573.14125pt x 516.93124pt>
+<img/pogonias_ACP1.png, id=55, 573.14125pt x 516.93124pt>
 File: img/pogonias_ACP1.png Graphic file (type png)
 
 <use img/pogonias_ACP1.png>
-Package pdftex.def Info: img/pogonias_ACP1.png used on input line 198.
+Package pdftex.def Info: img/pogonias_ACP1.png used on input line 203.
 (pdftex.def)             Requested size: 200.60243pt x 180.92863pt.
 
-<img/solatus_ACP2.png, id=51, 564.1075pt x 508.90125pt>
+<img/solatus_ACP2.png, id=56, 564.1075pt x 508.90125pt>
 File: img/solatus_ACP2.png Graphic file (type png)
 
 <use img/solatus_ACP2.png>
-Package pdftex.def Info: img/solatus_ACP2.png used on input line 199.
+Package pdftex.def Info: img/solatus_ACP2.png used on input line 204.
 (pdftex.def)             Requested size: 197.44057pt x 178.1181pt.
 
-<img/pogonias_ACP2.png, id=52, 558.085pt x 508.90125pt>
+<img/pogonias_ACP2.png, id=57, 558.085pt x 508.90125pt>
 File: img/pogonias_ACP2.png Graphic file (type png)
 
 <use img/pogonias_ACP2.png>
-Package pdftex.def Info: img/pogonias_ACP2.png used on input line 199.
+Package pdftex.def Info: img/pogonias_ACP2.png used on input line 204.
 (pdftex.def)             Requested size: 195.33267pt x 178.1181pt.
 
-<img/tree_solatus.png, id=53, 507.8975pt x 464.73625pt>
+<img/tree_solatus.png, id=58, 507.8975pt x 464.73625pt>
 File: img/tree_solatus.png Graphic file (type png)
 
 <use img/tree_solatus.png>
-Package pdftex.def Info: img/tree_solatus.png used on input line 200.
+Package pdftex.def Info: img/tree_solatus.png used on input line 205.
 (pdftex.def)             Requested size: 203.1554pt x 185.8912pt.
 
-<img/tree_pogonias.png, id=54, 599.23875pt x 462.72874pt>
+<img/tree_pogonias.png, id=59, 599.23875pt x 462.72874pt>
 File: img/tree_pogonias.png Graphic file (type png)
 
 <use img/tree_pogonias.png>
-Package pdftex.def Info: img/tree_pogonias.png used on input line 200.
+Package pdftex.def Info: img/tree_pogonias.png used on input line 205.
 (pdftex.def)             Requested size: 209.7367pt x 161.95749pt.
 
-Overfull \hbox (7.60959pt too wide) in paragraph at lines 196--208
+Overfull \hbox (7.60959pt too wide) in paragraph at lines 201--213
 [][] 
  []
 
-[6 <./img/ACP_experimental.png>] [7 <./img/solatus_ACP1.png> <./img/pogonias_AC
-P1.png> <./img/solatus_ACP2.png> <./img/pogonias_ACP2.png> <./img/tree_solatus.
-png> <./img/tree_pogonias.png>]
-<img/motif_pogonias.png, id=67, 593.21625pt x 546.04pt>
+<img/motif_pogonias.png, id=60, 590.205pt x 555.07375pt>
 File: img/motif_pogonias.png Graphic file (type png)
 
 <use img/motif_pogonias.png>
-Package pdftex.def Info: img/motif_pogonias.png used on input line 220.
-(pdftex.def)             Requested size: 177.96625pt x 163.81326pt.
+Package pdftex.def Info: img/motif_pogonias.png used on input line 225.
+(pdftex.def)             Requested size: 177.06287pt x 166.52339pt.
 
-<img/motif_solatus.png, id=68, 586.19pt x 546.04pt>
+<img/motif_solatus.png, id=61, 590.205pt x 548.0475pt>
 File: img/motif_solatus.png Graphic file (type png)
 
 <use img/motif_solatus.png>
-Package pdftex.def Info: img/motif_solatus.png used on input line 220.
-(pdftex.def)             Requested size: 175.85835pt x 163.81326pt.
+Package pdftex.def Info: img/motif_solatus.png used on input line 225.
+(pdftex.def)             Requested size: 177.06287pt x 164.41551pt.
 
-<img/motif_sabaeus.png, id=69, 589.20125pt x 549.05125pt>
+<img/motif_sabaeus.png, id=62, 589.20125pt x 549.05125pt>
 File: img/motif_sabaeus.png Graphic file (type png)
 
 <use img/motif_sabaeus.png>
-Package pdftex.def Info: img/motif_sabaeus.png used on input line 221.
+Package pdftex.def Info: img/motif_sabaeus.png used on input line 226.
 (pdftex.def)             Requested size: 176.76173pt x 164.71664pt.
 
-<img/motif_fascicularis.png, id=70, 582.175pt x 546.04pt>
+<img/motif_fascicularis.png, id=63, 582.175pt x 546.04pt>
 File: img/motif_fascicularis.png Graphic file (type png)
 
 <use img/motif_fascicularis.png>
-Package pdftex.def Info: img/motif_fascicularis.png used on input line 221.
+Package pdftex.def Info: img/motif_fascicularis.png used on input line 226.
 (pdftex.def)             Requested size: 174.65384pt x 163.81326pt.
- [8] [9 <./img/motif_pogonias.png> <./img/motif_solatus.png> <./img/motif_sabae
-us.png> <./img/motif_fascicularis.png>]
+ [7] [8 <./img/solatus_ACP1.png> <./img/pogonias_ACP1.png> <./img/solatus_ACP2.
+png> <./img/pogonias_ACP2.png> <./img/tree_solatus.png> <./img/tree_pogonias.pn
+g>] [9 <./img/motif_pogonias.png> <./img/motif_solatus.png> <./img/motif_sabaeu
+s.png> <./img/motif_fascicularis.png>]
 <img/similarity_pogonias.png, id=81, 571.13374pt x 551.05875pt>
 File: img/similarity_pogonias.png Graphic file (type png)
 
 <use img/similarity_pogonias.png>
-Package pdftex.def Info: img/similarity_pogonias.png used on input line 239.
+Package pdftex.def Info: img/similarity_pogonias.png used on input line 244.
 (pdftex.def)             Requested size: 171.34145pt x 165.3189pt.
 
 <img/similarity_solatus.png, id=82, 579.16376pt x 545.03625pt>
 File: img/similarity_solatus.png Graphic file (type png)
 
 <use img/similarity_solatus.png>
-Package pdftex.def Info: img/similarity_solatus.png used on input line 239.
+Package pdftex.def Info: img/similarity_solatus.png used on input line 244.
 (pdftex.def)             Requested size: 173.75046pt x 163.51213pt.
 
 <img/similarity_sabaeus.png, id=83, 585.18625pt x 525.965pt>
 File: img/similarity_sabaeus.png Graphic file (type png)
 
 <use img/similarity_sabaeus.png>
-Package pdftex.def Info: img/similarity_sabaeus.png used on input line 240.
+Package pdftex.def Info: img/similarity_sabaeus.png used on input line 245.
 (pdftex.def)             Requested size: 175.55722pt x 157.79071pt.
 
 <img/similarity_fascicularis.png, id=84, 580.1675pt x 526.96875pt>
 File: img/similarity_fascicularis.png Graphic file (type png)
 
 <use img/similarity_fascicularis.png>
-Package pdftex.def Info: img/similarity_fascicularis.png used on input line 240
+Package pdftex.def Info: img/similarity_fascicularis.png used on input line 245
 .
 (pdftex.def)             Requested size: 174.05157pt x 158.09184pt.
  [10 <./img/similarity_pogonias.png> <./img/similarity_solatus.png> <./img/simi
-larity_sabaeus.png> <./img/similarity_fascicularis.png>] [11] [12] (./rapport.b
-bl) [13] [14] (./rapport.aux)
+larity_sabaeus.png> <./img/similarity_fascicularis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--260
+
+ []
+
+
+Overfull \hbox (12.26053pt too wide) in paragraph at lines 267--268
+\T1/futs/m/n/12 sé-quences. Le terme uti-lisé pour dé-crire cette clas-si-fi-ca
+-tion inter-espèce est "super-classification". 
+ []
+
+[11] [12] [13] (./rapport.bbl) [14] [15] (./rapport.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1231,7 +1241,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5485 strings out of 493105
  74648 string characters out of 6137072
- 140279 words of memory out of 5000000
+ 141279 words of memory out of 5000000
  8765 multiletter control sequences out of 15000+600000
  112404 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1244,10 +1254,10 @@ ublic/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/p
 utb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on rapport.pdf (17 pages, 2122188 bytes).
+Output written on rapport.pdf (18 pages, 2121278 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
