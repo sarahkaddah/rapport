@@ -1,0 +1,73 @@
+% Encoding: ISO-8859-1
+
+
+@Article{Cacheux_evolution,
+  Title                    = {Evolutionary History of Alpha Satellite DNA in Cercopithecini},
+  Author                   = {Cacheux}
+}
+
+@Other{Edgar2004,
+  author    = {Robert C. Edgar},
+  title     = {Muscle: multiple sequence alignment with high accuracy and high throughput},
+  year      = {2004},
+  abstract  = {We describe MUSCLE, a new computer program for creating multiple alignments of protein sequences. Elements of the algorithm include fast distance estimation using kmer counting, progressive alignment using a new profile function we call the logexpectation score, and refinement using tree-dependent restricted partitioning. The speed and accuracy of MUSCLE are compared with T-Coffee, MAFFT and CLUSTALW on four test sets of reference alignments: BAliBASE, SABmark, SMART and a new benchmark, PREFAB. MUSCLE achieves the highest, or joint highest, rank in accuracy on each of these sets. Without refinement, MUSCLE achieves average accuracy statistically indistinguishable from T-Coffee and MAFFT, and is the fastest of the tested methods for large numbers of sequences, aligning 5000 sequences of average length 350 in 7 min on a current desktop computer. The MUSCLE program, source code and PREFAB test data are freely available at},
+  owner     = {skaddah},
+  timestamp = {2018.05.29},
+}
+
+@MastersThesis{rapport_florence,
+  Author                   = {Florence Jornod},
+  School                   = {Paris Diderot},
+  Year                     = {2016-2017}
+}
+
+@Misc{Rice2000,
+  author    = {Rice, Peter and Longden, Ian and Bleasby, Alan},
+  title     = {EMBOSS: the European molecular biology open software suite},
+  year      = {2000},
+  owner     = {skaddah},
+  publisher = {Elsevier Current Trends},
+  timestamp = {2018.05.31},
+}
+
+@Article{Gouy2009,
+  author    = {Gouy, Manolo and Guindon, St{\'e}phane and Gascuel, Olivier},
+  title     = {SeaView version 4: a multiplatform graphical user interface for sequence alignment and phylogenetic tree building},
+  journal   = {Molecular biology and evolution},
+  year      = {2009},
+  volume    = {27},
+  number    = {2},
+  pages     = {221--224},
+  owner     = {skaddah},
+  publisher = {Oxford University Press},
+  timestamp = {2018.05.31},
+}
+
+@Article{Saitou1987,
+  author        = {Saitou, Naruya and Nei, Masatoshi},
+  title         = {The neighbor-joining method: a new method for reconstructing phylogenetic trees.},
+  journal       = {Molecular biology and evolution},
+  year          = {1987},
+  volume        = {4},
+  number        = {4},
+  pages         = {406--425},
+  __markedentry = {[skaddah:]},
+  owner         = {skaddah},
+  timestamp     = {2018.05.31},
+}
+
+@InProceedings{Guindon2009a,
+  author        = {Guindon, S and Dufayard, JF and Hordijk, W and Lefort, Vincent and Gascuel, O},
+  title         = {PhyML: fast and accurate phylogeny reconstruction by maximum likelihood},
+  booktitle     = {Infection Genetics and Evolution},
+  year          = {2009},
+  volume        = {9},
+  number        = {3},
+  pages         = {384--385},
+  organization  = {ELSEVIER SCIENCE BV PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS},
+  __markedentry = {[skaddah:6]},
+  owner         = {skaddah},
+  timestamp     = {2018.05.31},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

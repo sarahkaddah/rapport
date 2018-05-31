@@ -52,6 +52,12 @@
   Volume                   = {4}
 }
 
+@Article{emboss,
+  Title                    = {Emboss : the european molecular biology open software suite},
+  Author                   = {Peter Rice, Ian Longden, Alan Bleasby},
+  Year                     = {2000}
+}
+
 @Article{phyml,
   Title                    = {Estimating Maximum Likelihood Phylogenies with PhyML},
   Author                   = {Stephane Guindon, Olivier Gascuel},

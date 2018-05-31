@@ -1,37 +1,20 @@
 \begin{thebibliography}{1}
 
+\bibitem{Cacheux_evolution}
+Cacheux.
+\newblock Evolutionary history of alpha satellite dna in cercopithecini.
+
 \bibitem{rapport_florence}
 Florence Jornod.
-\newblock Développement d'une méthode de classification pour les séquences
-  répétées centromériques de primates.
-\newblock Master's thesis, Université Paris Diderot - Paris 7, 2016-2017.
+\newblock Master's thesis, Paris Diderot, 2016-2017.
 
-\bibitem{muscle}
+\bibitem{Edgar2004}
 Robert~C. Edgar.
-\newblock Muscle : multiple sequence alignment with high accuracy and high
-  through-put.
-\newblock {\em Nucleic acids research}, 32(5):1792–1797, 2004.
+\newblock Muscle: multiple sequence alignment with high accuracy and high
+  throughput, 2004.
 
-\bibitem{seaview}
-Olivier~Gascuel Manolo~Gouy, Stéphane~Guindon.
-\newblock Seaview version 4 : a multiplatform graphical user interface for
-  sequence alignment and phylogenetic tree building.
-\newblock {\em Molecular biology and evolution}, 27(2):221–224, 2009.
-
-\bibitem{phyml}
-Olivier~Gascuel Stéphane~Guindon.
-\newblock Estimating maximum likelihood phylogenies with phyml.
-\newblock {\em Bioinformatics for DNA Sequence Analysis}, 537:113--137, 2009.
-
-\bibitem{NJ}
-Masatoshi~Nei Naruya~Saitou.
-\newblock The neighbor-joining method : a new method for reconstructing
-  phylogenetic trees.
-\newblock {\em Molecular biology and evolution}, 4(4):406–425, 1987.
-
-\bibitem{emboss}
-Alan~Bleasby Peter~Rice, Ian~Longden.
-\newblock Emboss : the european molecular biology open software suite.
-\newblock 2000.
+\bibitem{Rice2000}
+Peter Rice, Ian Longden, and Alan Bleasby.
+\newblock Emboss: the european molecular biology open software suite, 2000.
 
 \end{thebibliography}
