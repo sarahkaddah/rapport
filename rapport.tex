@@ -203,11 +203,11 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 		    \hline
    			\textbf{Nb. seq. au total} & 105 529 & 112 902 & 29 842 & 235 535 \\
    			\hline
-   			\textbf{Nb. fam.} & 564 & 132 & 338 & 3642\\
+   			\textbf{Nb. fam.} & 564 & 132 & 338 & 3694\\
    			\hline
-   			\textbf{Nb. grandes fam.} & 12 & 13 & 43 & 105\\
+   			\textbf{Nb. grandes fam.} & 12 & 13 & 43 & 114\\
    			\hline
-   			\textbf{\% seq. ignorées} & 3.97 & 1.29 & 10.89 & 10.75\\
+   			\textbf{\% seq. ignorées} & 3.97 & 1.29 & 10.89 & 11.06\\
    			\hline
 			\end{tabular}
 			\caption{Résumé du jeu de données et des résultats préliminaires de la classification.}
@@ -216,20 +216,20 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 		
 		\begin{figure}
 			\center
-			\includegraphics[scale=0.45]{img/distribution_famille.png}
+			\includegraphics[scale=0.45]{img/distribution_familles.png}
 			\caption{\textbf{Distribution des familles en fonction de la taille.}}
 			\label{dist_fam} 
 		\end{figure}
 
-	A l'issue de la classification, seules les familles ayant plus de 100 séquences sont conservées pour l'analyse. Elles sont qualifiées de grandes familles. Le nombre de familles conservées diminue considérablement après élimination des petites familles (<100 séquences) mais des familles ne représentent que 11\% du jeu de données au plus (Tableau \ref{tab_res}). Les \textit{C. solatus} et \textit{C. pogonias} ont une dizaine de familles, \textit{C. sabaeus} en a 40, et le \textit{M. fascicularis} en a 105. La distribution des familles est similaire chez les quatre espèces. Les familles les plus petites sont très nombreuses et les familles les plus grandes sont peu fréquentes (Figure \ref{dist_fam}). \textit{C. solatus} possède une grande famille de 80 000 séquences, \textit{C. pogonias} de 94 000 séquences, \textit{M. fascicularis} possède quatre familles de plus de 10 000 séquences. La plus grande famille de \textit{C. sabaeus} fait 5000 séquences. Ces familles se démarquent des autres familles.
+	A l'issue de la classification, seules les familles ayant plus de 100 séquences, qualifiées de grandes familles, sont conservées pour l'analyse. Le nombre de familles conservées diminue considérablement après élimination des petites familles (<100 séquences) mais ces familles ne représentent que 11\% du jeu de données au plus (Tableau \ref{tab_res}). Les \textit{C. solatus} et \textit{C. pogonias} ont une dizaine de familles, \textit{C. sabaeus} en a 43, et le \textit{M. fascicularis} en a 114. Malgré le nombre de familles qui diffère d'une espèce à l'autre, la distribution des familles est similaire chez les quatre espèces. Les plus petites familles sont très nombreuses et et la fréquence diminue quand la taille augmente (Figure \ref{dist_fam}). Le \textit{C. solatus} possède une grande famille de 80 000 séquences, \textit{C. pogonias} de 94 000 séquences, \textit{M. fascicularis} possède quatre familles de plus de 10 000 séquences. La plus grande famille du \textit{C. sabaeus} fait 5000 séquences. Ces familles se démarquent des autres familles par leur taille.
 
 		\begin{figure}	
 			\includegraphics[scale=0.4]{img/ACP_experimental.png}  \\
-			\caption{\textbf{Caractérisation visuelle des familles $\alpha$-satellite chez \textit{C. solatus} et \textit{C. pogonias} à partir d'ACP:}Le nom des familles est indiqué sur les graphiques. Un point représente un monomère. \textbf{A.} \textit{C. solatus}. \textbf{B.} \textit{C. pogonias}.}
+			\caption{\textbf{Caractérisation visuelle des familles $\alpha$-satellite chez \textit{C. solatus} et \textit{C. pogonias} à partir d'une ACP:}Le nom des familles est indiqué sur les graphiques. Un point représente un monomère. \textbf{A.} \textit{C. solatus}. \textbf{B.} \textit{C. pogonias}.}
 			\label{fig:ACP_exp} 
 	\end{figure}	
 	
-	Les espèce \textit{C. solatus} et \textit{C. pogonias} sont analysées dans un premier temps pour comparer la classification automatisée avec la classification expérimentale du laboratoire.Expérimentalement, 6 familles $\alpha$-satellites ont été déterminées chez les Cercopithèques. Ces deux espèces partagent deux grandes familles monomériques, C1 et C2, de l'ordre de plusieurs milliers de séquences, et deux familles formant un dimère, C3-C4, de l'ordre d'une centaine de séquences chacune. \textit{C. pogonias} possède les familles supplémentaires C5 et C6. Ces familles ont été définies à partir d'une méthode visuelle établie d'après une ACP (Fig. \ref{fig:ACP_exp}).\\
+	Les espèces \textit{C. solatus} et \textit{C. pogonias} sont analysées dans un premier temps pour comparer la classification automatisée avec la classification expérimentale, une méthode visuelle établie d'après une ACP (Fig. \ref{fig:ACP_exp}).Expérimentalement, 6 familles $\alpha$-satellites ont été déterminées chez les Cercopithèques. Ces deux espèces partagent deux grandes familles monomériques, C1 et C2, et deux familles formant un dimère, C3-C4, de l'ordre d'une centaine de séquences chacune. Le \textit{C. pogonias} possède les familles supplémentaires C5 et C6.\\
 		\begin{table}
 			\center
 			\begin{tabular}{|c|c|c|}
@@ -252,60 +252,51 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 		\caption{\textbf{Résumé du tableau de contingence:} Comptage des familles issues de la classification et leur répartition théorique dans les familles expérimentales (C1 à C6). Les valeurs entre parenthèse sont des petites familles (< 100 séquences) qui ne sont pas prises en compte dans le reste des analyses.}
 		\label{tab_count_fam}
 	\end{table}	
-	Bien que le nombre de grandes familles soit relativement proche entre ces deux espèces, les résultats diffèrent significativement (Tableau \ref{tab_count_fam}). Toutes les familles chez \textit{C. solatus} sont retrouvées: 11 familles forment la famille C2, une famille forme la famille C1 et les familles C3 et C4 sont retrouvées dans des petites familles d'environ 80 séquences chacune. Chez \textit{C. pogonias}, toutes les familles sont retrouvées sauf la famille C6. La famille C1 est répartie en 10 familles, les familles C2, C3 et C5 sont retrouvées entièrement, la famille C4 est également retrouvée sous la forme d'une petite famille de 86 séquences. Chez le \textit{C. solatus}, la famille C2 est divisée en plusieurs familles et la famille C1 est retrouvée dans une seule famille. La situation inverse est retrouvée  chez \textit{C. pogonias}.
+	Bien que le nombre de grandes familles soit relativement proche entre ces deux espèces, les résultats diffèrent significativement (Tableau \ref{tab_count_fam}). Toutes les familles chez le \textit{C. solatus} sont retrouvées: 11 familles forment la famille C2, une famille forme la famille C1 et les familles C3 et C4 sont retrouvées dans des petites familles d'environ 80 séquences chacune. Chez \textit{C. pogonias}, toutes les familles sont retrouvées sauf la famille C6. La famille C1 est répartie en 10 familles, les familles C2, C3 et C5 sont retrouvées entièrement, la famille C4 est également retrouvée sous la forme d'une petite famille de 86 séquences. Chez le \textit{C. solatus}, la famille C2 est divisée en plusieurs familles et la famille C1 est retrouvée dans une seule famille. La situation inverse est retrouvée  chez \textit{C. pogonias}.
 		\begin{figure}	
 			\begin{tabular}{cc|cc}
 				  & \textit{C. solatus} &  &  \textit{C. pogonias}\\
-		\textbf{A} & \includegraphics[scale=0.35]{img/solatus_ACP1.png} & \textbf{D} & \includegraphics[scale=0.35]{img/pogonias_ACP1.png} \\
-		\textbf{B} & \includegraphics[scale=0.35]{img/solatus_ACP2.png} &  \textbf{E} & \includegraphics[scale=0.35]{img/pogonias_ACP2.png} \\
-		\textbf{C} & \includegraphics[scale=0.25]{img/tree_solatus.png} & \textbf{F} & \includegraphics[scale=0.25]{img/tree_pogonias.png} \\
+		\textbf{A} & \includegraphics[scale=0.35]{img/solatus_ACP1.png} & \textbf{C} & \includegraphics[scale=0.35]{img/pogonias_ACP1.png} \\
+		\textbf{B} & \includegraphics[scale=0.35]{img/solatus_ACP2.png} &  \textbf{D} & \includegraphics[scale=0.35]{img/pogonias_ACP2.png} \\
+		\textbf{E} & \includegraphics[scale=0.20]{img/tree_solatus.png} & \textbf{F} & \includegraphics[scale=0.20]{img/tree_pogonias.png} \\
 	\end{tabular}
-	\caption{\textbf{Représentation des plus grandes familles issues de la classification automatisée:} Les plus grandes familles issues de la classification automatisée sont indiquées sur les représentations de l'ACP des 5-mers.
-	\textbf{A.} Composantes 1 et 2 de l'ACP. C1 est en vert, C2 est en orange, rouge, bleu et turquoise.  			\textbf{B.} Composantes 1 et 3 de l'ACP. 
-	\textbf{D.} Composantes 1 et 2 de l'ACP. De même pour \textit{C. pogonias}. C1 est en vert, violet et rose, C2 est en orange, C4 est en bleu clair, C5 est en jaune.
-	\textbf{E.} Composantes 1 et 3 de l'ACP.
-	\textbf{C. et F.} Représentation des familles issues de la classification sous forme d'arbres. Les couleurs des familles sont respectivement conservées et 100 séquences alétoires par familles sont sélectionnées pour la construction de l'arbre. 	 
+	\caption{\textbf{Représentation des plus grandes familles issues de la classification automatisée:} Ces familles sont superposées sur les représentations de l'ACP des 5-mers.
+	\textbf{A.} Composantes 1 et 2 de l'ACP. Les familles qui correspondraient à C1 sont en vert, C2 en orange, rouge, bleu et turquoise.  \textbf{B.} Composantes 1 et 3 de l'ACP. 
+	\textbf{C.} Composantes 1 et 2 de l'ACP. Les familles qui correspondraient à C1 sont en vert, violet et rose, C2 en orange, C4 en bleu clair et C5 en jaune.
+	\textbf{C.} Composantes 1 et 3 de l'ACP.
+	\textbf{E. et F.} Phylogénie des différentes familles chez \textit{C. solatus} (100 séquences par famille) et \textit{C. pogonias} (80 séquences par famille) respectivement. Les couleurs sont respectivement conservées.	 
 	\label{fig:so_po_acp_tree}
 		} 
 \end{figure}
 			
 			Pour visualiser cette comparaison, des couleurs sont assignées aux familles issues de la classification automatisée. Ces couleurs sont superposées aux résultats expérimentaux en noir.  Chez \textit{C. solatus}, la famille C1 est entièrement retrouvée dans une famille. La famille C2 est répartie en plusieurs familles. Deux familles intermédiaires (rouge et bleue) sont visibles entre la famille C1 (vert)  et C2 (orange). Elles ne sont pas distinctes.  Une famille supplémentaire (turquoise) se démarque. Pour confirmer cette division de la famille C2, la visualisation de l'ACP des 5-mers est observée en fonction des composantes 1 et 3. Les familles intermédiaires sont toujours confondues, contrairement à la famille turquoise qui forme une famille à part entière. Pour certifier ce fait, l'arbre construit atteste que chaque famille est bien retrouvée, notamment les familles intermédiaires qui forment bien deux familles. Chez \textit{C. pogonias}, les familles C2, C4 et C5 sont bien retrouvées. La famille C6 se fond dans la famille C1 (en vert). La famille C1 est divisée en deux familles supplémentaires (rose et violet). La visualisation des composantes 1 et 3 de l'ACP ne permet pas de trancher sur la classification. L'arbre montre que les familles en rose et violet sont très proches.  
 			 
-			\subsubsection{Motifs fonctionnels}
-\begin{figure}	
-	\begin{tabular}{cccc} 
-		\textbf{A} & \includegraphics[scale=0.3]{img/motif_pogonias.png} & \textbf{B} \includegraphics[scale=0.3]{img/motif_solatus.png} \\
-		\textbf{C} & \includegraphics[scale=0.3]{img/motif_sabaeus.png} & \textbf{D} \includegraphics[scale=0.3]{img/motif_fascicularis.png} \\
-	\end{tabular}
+			\subsubsection{Motifs potentiellement fonctionnels}
+\begin{figure}
+	\center	
+	\includegraphics[scale=0.4]{img/graphique_motifs.png}
 	\caption{\textbf{Présence des motifs CENP-B, pJ$\alpha$ ou pK$\beta$ par famille:}
 	Le pourcentage de séquences par famille ayant le motif pJ$\alpha$ est en vert, pK$\beta$ en orange et CENP-B en bleu. Chaque famille est représentée en fonction de sa taille.
-	\label{fig:motif}
-		} 
-\end{figure}			
-			La protéine CENP-B est présente chez toutes les espèces, mais les Cercopithèques ne possèdent pas son site de liaison. Cette assertion est vérifiée par l'absence de pourcentage pour ce motif dans les graphes. Le \textit{C. sabaeus} et le \textit{M. fascicularis} n'ont pas ce motif non plus. Le \textit{M. fascicularis} a 7 familles sans motifs.
-			
-			Au contraire, la protéine pJ$\alpha$ est très présente chez \textit{C. solatus} (à 90\% en moyenne) et \textit{C. pogonias} (à 85\% en moyenne). La plus grande famille C1, ayant plus de 80 000 séquences chez ces deux espèces, se démarque avec un pourcentage à  95\%. 
-			
-			Le \textit{M. fascicularis} ont des pourcentages pour le motif pJ$\alpha$ qui varie entre 1\% et 97\%. Cette espèce a 20 familles avec le motifs à plus de 80\% dont une famille de  40 000 séquences et une autre de 14 000 séquences, 35 famille ayant un pourcentage entre 50\% et 80\% exclu, et 40 famille ayant le motif à moins de 50\%. 
-			
-			Le motif pK$\beta$ est présent lorsque pJ$\alpha$ est absent de la famille. Il est absent chez \textit{C. pogonias}. Seule la famille C3 a ce motif à 80\% chez \textit{C. solatus}. Le \textit{C. sabaeus} a deux familles avec le motif, l'une à 79\% et l'autre à 29\%. Le \textit{M. fascicularis} a trois familles avec ce motif. La famille ayant le motif à 93\% est une grande famille de 64 000 séquences. Les deux autres familles ont le motif à 0.77\% et 0.29\%. 
-			
+	\label{fig:motif}} 
+\end{figure}
+			La protéine CENP-B est présente chez toutes les espèces, mais les Cercopithèques ne possèdent pas son site de liaison. La protéine pJ$\alpha$ est une protéine peu connue mais dont le site de liaison est déterminé. Le motif pK$\beta$ est un site commun aux familles n'ayant ni CENP-B ni pJ$\alpha$. Ces trois motifs sont recherchés pour chaque famille de chaque espèce sur la base des consensus (partie matériel et méthodes) avec 2 mismatchs autorisés dans le but de caractériser ces familles. En effet, CENP-B est absent chez \textit{C. solatus} et \textit{C. pogonias}. Le \textit{C. sabaeus} et le \textit{M. fascicularis} n'ont pas ce motif non plus. Par contre plus de 90\% des familles chez les quatre espèces ont le motif pJ$\alpha$ mais à des niveaux différents.\\
+		La totalité des familles chez \textit{C. solatus} ont le motif, dont 8 à plus de 75\%. Chez le \textit{C. pogonias}, 12 familles sur 13 ont le motif à plus de 75\%. Par ailleurs, la plus grande famille, C1, ayant plus de 80 000 séquences chez ces deux espèces, se démarque avec un pourcentage à 95\%. Le \textit{C. sabaeus} présente 39 familles avec ce motif, dont 7 l'ayant à plus de 75\%. Le \textit{M. fascicularis} a des pourcentages pour le motif pJ$\alpha$ qui varie entre 1\% et 97\%. Cette espèce a 28 familles avec le motif à plus de 75\% dont une famille de  40 000 séquences et une autre de 14 000 séquences.\\
+			Le motif pK$\beta$ est présent lorsque pJ$\alpha$ est absent de la famille. Il est absent chez \textit{C. solatus}. Seule la famille C3 a ce motif à 80\% chez \textit{C. pogonias}. Le \textit{C. sabaeus} a quatre familles avec le motif, dont deux à 79\% et l'autre à 29\%. Le \textit{M. fascicularis} a cinq familles avec ce motif. La famille ayant le motif à 93\% est une grande famille de 64 000 séquences. Les deux autres familles ont le motif à 0.76\% et 0.50\%.\\
+			Les quatre espèces ont des points en commun concernant l'absence du motif CENP-B et quelques familles ayant pK$\beta$. Cependant pour le motif pJ$\alpha$, les \textit{C. solatus} et \textit{C. pogonias}
+ ont des pourcentages relativement proches mais qui diffèrent du \textit{M. fascicularis} et du \textit{C. sabaeus}, dont les valeurs sont intermédiaires. Chaque famille a un motif pour toutes les espèces excepté le \textit{M. fascicularis} qui a 6 familles sans motifs.\\ 			
 			\subsubsection{Similarité entre familles}
 \begin{figure}	
-	\begin{tabular}{cccc} 
-		\textbf{A} & \includegraphics[scale=0.3]{img/similarity_pogonias.png} & \textbf{B} \includegraphics[scale=0.3]{img/similarity_solatus.png} \\
-		\textbf{C} & \includegraphics[scale=0.3]{img/similarity_sabaeus.png} & \textbf{D} \includegraphics[scale=0.3]{img/similarity_fascicularis.png} \\
-	\end{tabular}
+	\center
+	\includegraphics[scale=0.4]{img/graphique_similarity.png}
 	\caption{\textbf{Pourcentage de divergence observée au sein d'une famille:}
-	Un point correspond à une famille et représente le pourcentage de divergence en fonction de la taille de la famille.
-	\label{fig:motif}
+	Un point correspond à une famille et son pourcentage de divergence observé.
+	\label{fig:divergence}
 		} 
 \end{figure}
-	\textit{C. solatus} et \textit{C. pogonias} ont un pourcentage de divergence qui est relativement faible, ne dépassant pas les 15\%. La  famille C1 a un pourcentage de divergence très faible de 5\%. Cette grande famille de plus de 80 000 séquences est donc probablement une famille récente.  \textit{C. pogonias} a d'autres familles qui ont un pourcentage en dessous de 5\%.
-	\textit{C. sabaeus} a les pourcentages de divergence les plus élevés, allant jusque 28\%, quelque soit la taille de la famille. Cette espèce a des familles anciennes d'$\alpha$-satellites ou alors cette divergence est le résultat d'erreurs de séquençages. Le \textit{M. fascicularis} a des poucentages de divergence qui varient entre 5\% et 27\%. 3 grandes familles ayant plus de 10 000 séquences ont un pourcentage de divergence qui se rapproche de 5\%. Ces familles sont probablement récentes.
+	Le pourcentage de divergence observée par famille est calculé sur 500 séquences tirées aléatoirement dans une famille pour estimer l'âge de celles-ci. Les \textit{C. solatus} et \textit{C. pogonias} ont des pourcentages relativement faibles ne dépassant pas 15\%, le \textit{M. fascicularis} a des valeurs intermédiaires variant de 0.1\% à 28\%, et \textit{C. sabaeus} a les valeurs les plus élevées allant de 11\% à 28\%.\\
+	Les familles qui correspondraient aux familles C1 et C5 ont un pourcentage autour de 5\%. Les autres familles chez \textit{C. solatus} ont une moyenne de 10.85\%. Les familles de taille moyenne (quelques centaines de séquences) qui correspondraient à la famille C1 ont des pourcentages inférieurs à 3\% chez \textit{C. pogonias} et les trois familles restantes ont des valeurs de 13\% en moyenne. Les familles du \textit{C. sabaeus} ont en moyenne 16.8\% de divergence observée, la taille n'ayant aucun rapport au pourcentage. Le \textit{M. fascicularis} a trois familles avec un pourcentage inférieur à 1\% et cinq familles à 6\% en moyenne. Les 106 familles restantes ont un pourcentage supérieur à 10\%.\\
+	Le pourcentage de similarité est semblable chez les \textit{C. solatus} et \textit{C. pogonias}. Le \textit{M. fascicularis} a  quelques familles qui ont le même comportement mais il a également beaucoup de familles aux pourcentages très élevés, tandis que la majorité des familles chez le \textit{C. sabaeus} a une grande partie de ses familles avec de grands pourcentages.
 	
-	Les tailles moyennes des consensus sont de 184 nucléotides pour \textit{C. pogonias}, 206 pour \textit{C. solatus}, 203 pour le \textit{C. sabaeus} et X pour le \textit{M. fascicularis}
-
 
 %########################################################################################################
 	
@@ -331,6 +322,10 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 	Un arbre composé de toutes les super-familles pK$\beta$ est construit pour voir comment elles s'assemblent. Le jeu de données est construit à partir de 50 séquences par famille pK$\beta$ par espèce tirées alétoirement (Figure \ref{fig:pkb_tree}) et contiennent la famille C3 de \textit{C. solatus}, dont la famille était trop petite pour être prise en compte. Comme les autres "familles C3", elle se range dans la super-famille 20. 
 
 \section{Discussion}
+
+	Les tailles moyennes des consensus sont de 184 nucléotides pour \textit{C. pogonias}, 206 pour \textit{C. solatus}, 203 pour le \textit{C. sabaeus} et X pour le \textit{M. fascicularis}
+
+
 \section{Conclusion}
 
 \newpage
