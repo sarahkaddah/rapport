@@ -108,29 +108,15 @@ Merci à Namrod pour toute la partie sur la bibliographie. Retrouvez ses questio
 
 \section{Introduction}
 \subsection{Le centromère}
-Bibliographie:\\
-1-> kinetochore\\
-2-> CENP-A\\
-3-> l'ADN satellite\\
-
 Le centromère est une structure chromatinienne caractérisé par la présence de CENP-A. Cette protéine, très conservée au cours de l'évolution, est un variant de l'histone H3. Son rôle est de fixer la position du kinétochore par un mécanisme encore peu connu. En effet, le centromère est le site d'assemblage du kinétochore, un ensemble d'ADN et de protéines. Il permet l'attachement du fuseau mitotique pour la ségrégation des chromosomes durant la division cellulaire chez les eucaryotes. Le centromère et les protéines impliquées sont relativement bien conservés. Au contraire, l'ADN sous-jacent est très diversifié et l'organisation varie d'un taxon à l'autre. Cependant, une caractéristique commune est retrouvée chez toute les espèces: de l'ADN centromérique répété en tandem nommé ADN satellite. Ces répétitions sont issues d'événements d'amplification, tels les crossovers inégaux, la conversion de gènes, les cercles roulants ou la transposition de séquences.[Malik and Henikoff, 2002; Plohl et al. 2012]
 Ces séquences représentent 5\% du génome. Les répétitions s'étendent de 7pb à 3,2kb avec des séquences de 145-180kb le plus souvent.  
 
 \subsection{L'ADN $\alpha$-satellites}
--> première mise en évidence des AS\\
-->théorie gradient de l'âge\\
--> travaux sur le gorille à dev\\
-
 L'ADN satellite chez les Primates est connu sous le nom d'$\alpha$-satellite. Ces séquences centromériques répétées en tandem sont riches en AT. 
--> article sur la première découverte
 
 Des études chez l'Homme propose un modèle évolutif. La répartition des $\alpha$-satellites suivrait une répartition spécifique selon l'âge des familles. Les familles les plus jeunes s'insèrent au cœur du centromère, repoussant les familles les plus anciennes jusqu'aux regions voisines, appelé péri-centromère.\\
-->Article Shepelev\\
-->Est-ce que je peux utiliser du conditionnel? OU est-ce que cette théorie est confirmée?
 
 Un monomère a une longueur de 171pb et il peut être répété des milliers de fois. Les monomères peuvent être répartis en famille selon leur similarité, les séquences ayant un taux d'identité supérieur à 70\%. Ces séquences ont soit une organisation monomérique soit une organisation en répétition d'ordre supérieur (Fig. 1). Dans le premier cas, les séquences d'une même famille sont répétés en tandem. Dans le deuxème cas, une suite de monomères appartenant à différentes familles forme une unité, qui elle est répétée en tandem. 
-
-
 
 Ces séquences peuvent avoir un site de liaison à la protéine centromérique CENP-B un motif spécifique de 17pb. Cette protéine, qui reconnaît et se fixe sur l'ADN, serait présente chez de nombreuses familles de Primates. La protéine pJ$\alpha$, une protéine peu caractérisée, reconnaît un motif qui remplace celui de CENP-B.
 
@@ -141,7 +127,6 @@ Les $\alpha$-satellites ont essentiellement été étudiées chez l'homme. Modè
 		\includegraphics[height=3.5cm, width=12cm]{img/AS_organization.png}
 		\caption{\textbf{Organisation spatiale des $\alpha$-satellites:} Le coeur du centromère (bleu foncé) est organisé en répétition d'ordre supérieur. Le péricentromère(bleu clair) a une organisation monomérique. Un monomère d'une même famille est représenté par une petite flèche de même couleur. Les points rouges représentent les sites de fixation à CENP-B ou pJ$\alpha$.}
 \end{figure}
-
 
 \subsection{Le sujet de stage}
 
@@ -183,11 +168,8 @@ Le premier critère de validation est la taille du sous-groupe. Si un groupe att
 Un seuil de \textit{matepair} est fixé à 0.90, pour avoir des groupes homogènes. Si au moins une des valeurs de \textit{matepair} est au-dessous de ce seuil, les sous-groupes sont considérés comme formant un seul groupe et le groupe initial est sauvegardé comme une famille unique. Si les \textit{matepairs} sont au-dessus d’un certain seuil, les deux sous-groupes sont ajoutés séparément à la file pour être potentiellement redivisés ultérieurement.
 
 	\subsection{Analyse des séquences}
-		\subsubsection{Alignements}
 L'alignement des séquence est fait avec muscle \cite{Edgar2004} et SeaView \cite{Gouy2009}, un éditeur d'alignements multiples. 
-	\subsubsection{Phylogénie}
 La phylogénie est construite avec la méthode du maximum de vraisemblance (PhyML) \cite{Guindon2009a}. Le modèle F84 est utilisé pour la construction de l'arbre. Le support de branche est aLRT (SH-like). La fréquence d'équilibre nucléotidique est optimisée. Le ratio de transition et de transversion est fixé à 4. Aucun site est considéré comme invariable. Le taux de variation à travers le site est optimisé. Les opérations de recherche d'arbre est NNI et l'arbre de départ est défini avec la méthode de Neighbor-Joining \cite{Saitou1987} avec une topologie optimisée.
-		\subsubsection{Consensus}
 Les consensus sont obtenus avec des scripts développés par l'équipe. Les motifs CENP-B (TTCGTTGGAA[AG]CGGGA), PJ$\alpha$ (TTCCTTTT[CT]CACC[AG]TAG) et pK$\beta$ (CTATAGGGCCAAAGGAA) ont été identifiés avec le logiciel fuzznuc (package EMBOSS) \cite{Rice2000} et en autorisant 2 différences au maximum par rapport au consensus.
 
 %###########################################################################################################
@@ -301,15 +283,25 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 %########################################################################################################
 	
 	\subsection{Comparaison inter-espèce}
+	Pour étudier les mécanismes d'évolution des $\alpha$-satellites, une classification inter-espèce ou "super-classification" (SC) permet de comprendre les différences entre espèces. Pour chaque espèce, 100 séquences par grande famille (> 100 séquences) sont tirées aléatoirement. Un jeu de données de 18 100 séquences est soumis à la classification automatique. A l'issue de cette super-classification, 158 familles sont obtenues au total, dont 90 grandes familles. Les petites familles de moins de 20 séquences, soit 1.76\% de ce jeu de données, ne sont pas prises en compte dans l'analyse.\\
 	\subsubsection{Répartition des super-familles}
-				Pour étudier les mécanismes d'évolution des $\alpha$-satellites, une classification inter-espèce ou "super-classification" permet de comprendre les différences entre espèces. Pour chaque espèce, 100 séquences par grande famille  $\alpha$-satellite sont tirées aléatoirement. La taille minimale d'une super-famille est fixée à 20 séquences. A l'issue de cette super-classification, 139 familles sont obtenues au total, dont 92 grandes familles. Les petites familles de moins de 20 séquences, soit 1.33\% de ce jeu de données, ne sont pas prises en compte dans l'analyse.\\
-				
-				Les différentes espèces partagent des super-familles, mais certaines sont spécifiques. Le \textit{M. fascicularis} possède 15 familles spécifiques. Le \textit{C. pogonias} possède 8 super-familles qui lui sont spécifiques. L'une de ces super-familles appartient a un sous-groupe de C6 de 200 séquences. Les autres super-familles sont des sous-familles de la famille C1. Le \textit{C. solatus} possède trois super-familles qui lui sont spécifiques. Or ces familles sont des sous-familles de la famille C2. Les familles C1 et C2, sont des familles qui sont initialement décrites communes aux \textit{C. pogonias} et {C. solatus}. Malgré des différences, la super-famille 23 qui est partagée entre ces deux espèces appartient également à la famille C2.
-				
-				Cependant le \textit{C. sabaeus} ne possède pas de famille spécifique. Il partage 35 de ses super-familles avec le \textit{M. fascicularis}. La super-famille 24 est commune à \textit{C. solatus}, sabaeus et au macaque. Dans cette super-famille, les 118 séquences appartenant à \textit{C. solatus} font parti de la famille C2. Cette famille est donc une famille ancestrale partagée par ces 4 espèces. 
-				
-				La famille C2 fait l'objet d'une séparation intéressante. Une partie est commune à \textit{C. pogonias} et \textit{C. solatus} tandis qu'une autre est commune à \textit{C. pogonias}, \textit{C. sabaeus} et \textit{M. fascicularis}. Pour vérifier les résultats de cette classification, 30 séquences de chacune des familles C2 de \textit{C. solatus} et \textit{C. pogonias} sont tirées aléatoirement et un arbre est construit pour voir si cette division est retrouvée , puis un autre arbre avec les familles des deux autres espèces supposés de la famille C2 est également construit(résultat non montré). Effectivement, toutes les regroupements de famille sont retrouvés.
-							
+	Parmi les super-familles (SF), 38 ont une taille comprise entre 100 et 20 compris, et trois familles ont une taille strictement supérieure à 800 séquences. Seule une SF \textit{a priori} est commune aux quatre espèces. Elle rassemble 6 familles parmi les 10 familles classées C2 de \textit{C. solatus} et les deux familles également classées C2 de \textit{C. pogonias}, ainsi que deux familles du \textit{M. fascicularis} et une famille du \textit{C. sabaeus}. Une partie de la famille annotée C2 serait donc commune aux quatre espèces.\\
+	Une SF est partagée entre le \textit{C. pogonias}, le \textit{C. sabaeus} et le \textit{M. fascicularis}. Cette SF regroupe des familles ayant le motif pK$\beta$ et qui correspondrait à la famille C3 commune au \textit{C. pogonias} et au \textit{C. solatus}. Cela signifierait que la famille C3 serait commune à ces quatre espèces également.\\
+	Certaines SF sont spécifiques aux espèces. Au sein des 8 SF spécifiques du \textit{C. pogonias}, seule l'une d'entre elles regroupe deux familles, le reste étant composé d'une famille. Elles correspondraient aux familles C5, une petite partie de C6 et essentiellement à C1. Les trois SF spécifiques de \textit{C. solatus} seraient équivalentes aux familles C2. Le \textit{C. sabaeus} en a 3 et le \textit{M. fascicularis} 27.\\
+	Le \textit{C. sabaeus} et le \textit{M. fascicularis} partagent 38 SF, soit 42\% des grandes SF (> 20 séquences), dont la plus grande faisant une taille de 1194 séquences. Une seule SF est uniquement commune à \textit{C. solatus} et \textit{C. pogonias} et elle regroupe les deux plus grandes familles qui seraient du C1.
+	\subsubsection{Une mosaïque de familles C2}
+			\begin{figure}
+			\center	
+			\begin{tabular}{cccc}
+		\textbf{A.} & \includegraphics[scale=0.30]{img/tree_C2_pogonias_solatus.png} & \textbf{B.} & \includegraphics[scale=0.30]{img/tree_C2_all_species.png} \\
+	\end{tabular}
+	\caption{\textbf{Phylogénie des différentes familles qui correspondraient à la famille C2:}
+	\textbf{A.}\textit{C. solatus} (tons verts) et \textit{C. pogonias} (tons orange) \textbf{B.} A ces deux espèces sont rajoutés des familles du \textit{M. fascicularis} (tons bleus) et \textit{C. sabeus} (rose).	 
+	\label{tree_C2}
+		} 
+\end{figure}
+		La famille C2 fait l'objet d'une séparation en plusieurs familles intéressante. Pour vérifier les résultats de cette SC, 30 séquences de chacune des familles C2 de \textit{C. solatus} et \textit{C. pogonias} sont tirées aléatoirement et un arbre est construit pour voir si cette division est retrouvée , puis un autre arbre avec les familles des deux autres espèces supposés de la famille C2 est rajouté au jeu de données précédent construit.\\
+		Une partie de ces familles est spécifique au \textit{C. solatus}, tandis que les familles restantes sont communes aux quatre espèces selon la classification. Dans la phylogénie, les SF 27, 9 et 26 sont bien retrouvées. Cependant la SF 2 regroupe trop de familles, sans faire de distinction (Figure \ref{tree_C2} A). Les familles présumées C2 des deux autres espèces se mélangent plus spécifiquement avec la famille 51 de \textit{C. solatus}.							
 	\subsubsection{Origine du motif pK$\beta$}
 		\begin{figure}	
 			\centering
@@ -323,7 +315,9 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 
 \section{Discussion}
 
-	Les tailles moyennes des consensus sont de 184 nucléotides pour \textit{C. pogonias}, 206 pour \textit{C. solatus}, 203 pour le \textit{C. sabaeus} et X pour le \textit{M. fascicularis}
+	Les tailles moyennes des consensus sont de 173 nucléotides pour \textit{C. pogonias}, 173 pour \textit{C. solatus}, 173 pour le \textit{C. sabaeus} et X pour le \textit{M. fascicularis}\\
+	
+	Les plus grandes familles C2 de solatus sont regroupées\\
 
 
 \section{Conclusion}
