@@ -1,12 +1,73 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Cleveland2003}
+Don~W Cleveland, Yinghui Mao, and Kevin~F Sullivan.
+\newblock Centromeres and kinetochores: from epigenetics to mitotic checkpoint
+  signaling.
+\newblock {\em Cell}, 112(4):407--421, 2003.
+
+\bibitem{Santaguida2009}
+Stefano Santaguida and Andrea Musacchio.
+\newblock The life and miracles of kinetochores.
+\newblock {\em The EMBO journal}, 28(17):2511--2531, 2009.
+
+\bibitem{Sullivan1994}
+Kevin~F Sullivan, Mirko Hechenberger, and Khaled Masri.
+\newblock Human cenp-a contains a histone h3 related histone fold domain that
+  is required for targeting to the centromere.
+\newblock {\em The Journal of cell biology}, 127(3):581--592, 1994.
+
+\bibitem{Henikoff2001}
+S~Henikoff, K~Ahmad, and H~S Malik.
+\newblock The centromere paradox: stable inheritance with rapidly evolving dna.
+\newblock {\em Science (New York, N.Y.)}, 293:1098--1102, August 2001.
+
+\bibitem{Cellamare2009}
+A~Cellamare, C~R Catacchio, C~Alkan, G~Giannuzzi, F~Antonacci, M~F Cardone,
+  G~Della~Valle, M~Malig, M~Rocchi, E~E Eichler, and M~Ventura.
+\newblock New insights into centromere organization and evolution from the
+  white-cheeked gibbon and marmoset.
+\newblock {\em Molecular biology and evolution}, 26:1889--1900, August 2009.
+
+\bibitem{Willard1991}
+H~F Willard.
+\newblock Evolution of alpha satellite.
+\newblock {\em Current opinion in genetics \& development}, 1:509--514,
+  December 1991.
+
+\bibitem{Kurnit1974}
+D~M Kurnit and J~J Maio.
+\newblock Variable satellite dna's in the african green monkey cercopithecus
+  aethiops.
+\newblock {\em Chromosoma}, 45:387--400, May 1974.
+
+\bibitem{Lee1997}
+C~Lee, R~Wevrick, R~B Fisher, M~A Ferguson-Smith, and C~C Lin.
+\newblock Human centromeric dnas.
+\newblock {\em Human genetics}, 100:291--304, September 1997.
+
+\bibitem{Alexandrov2001}
+I~Alexandrov, A~Kazakov, I~Tumeneva, V~Shepelev, and Y~Yurov.
+\newblock Alpha-satellite dna of primates: old and new families.
+\newblock {\em Chromosoma}, 110:253--266, August 2001.
+
+\bibitem{Shepelev2009}
+Valery~A Shepelev, Alexander~A Alexandrov, Yuri~B Yurov, and Ivan~A Alexandrov.
+\newblock The evolutionary origin of man can be traced in the layers of defunct
+  ancestral alpha satellites flanking the active centromeres of human
+  chromosomes.
+\newblock {\em PLoS genetics}, 5:e1000641, September 2009.
+
+\bibitem{Romanova1996}
+L~Y Romanova, G~V Deriagin, T~D Mashkova, I~G Tumeneva, A~R Mushegian, L~L
+  Kisselev, and I~A Alexandrov.
+\newblock Evidence for selection in evolution of alpha satellite dna: the
+  central role of cenp-b/pj alpha binding region.
+\newblock {\em Journal of molecular biology}, 261:334--340, August 1996.
 
 \bibitem{Cacheux_evolution}
 Cacheux.
 \newblock Evolutionary history of alpha satellite dna in cercopithecini.
-
-\bibitem{rapport_florence}
-Florence Jornod.
-\newblock Master's thesis, Paris Diderot, 2016-2017.
 
 \bibitem{Edgar2004}
 Robert~C. Edgar.

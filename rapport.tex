@@ -14,78 +14,65 @@
 \usepackage{index}
 \usepackage{diagbox}
 \usepackage{multirow}
-
-%\usepackage{hyperref}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-%\usepackage{kpfonts}
 \usepackage{fourier}
 \usepackage[left=2cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \author{Sarah Kaddah}
 \title{Rapport de stage}
-
-%%%%%%%%%%Interligne
+%%%%%%%%%%Interligne%%%%%%%%%%
 \renewcommand{\baselinestretch}{1.5}
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%1ere page%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{titlepage}
-  \begin{sffamily}
-  \begin{center}
+%%%%%%%%% Header %%%%%%%%%
+	\begin{titlepage}
+	\begin{sffamily}
+	\begin{center}
 	\large{Université Paris Diderot - Paris 7 \hfill 2017-2018} \bigskip
-	\center{\LARGE{Master 2 Biologie-Informatique/ Bioinformatique}}
-	
-\begin{tabular}{c}
-\\ \\ \\
-\includegraphics[scale=0.3]{img/m2.png}
-\end{tabular}
-\hfill
-\begin{tabular}{c}
-\\
-\includegraphics[scale=0.1]{img/p7.png}
-\end{tabular}
-
-%%%%%%%%% Title    
+	\center{\LARGE{Master 2 Biologie-Informatique/ Bioinformatique}}	
+	\begin{tabular}{c}
+		\\ \\ \\
+		\includegraphics[scale=0.3]{img/m2.png}
+	\end{tabular}
+	\hfill
+	\begin{tabular}{c}
+		\\
+		\includegraphics[scale=0.1]{img/p7.png}
+	\end{tabular}
+%%%%%%%%% Title %%%%%%%%%
     \HRule \\[0.2cm]
     { \huge \bfseries \center{Etude de la fonction et des mécanismes d'évolution des séquences répétées centromériques chez les Primates}\\[0.4cm] }
     \HRule \\%[2cm]
-%%%%%%%%Centre de la page    
-\begin{center}\LARGE{\textbf{Sarah Kaddah}}\end{center}%~\\[0.1cm]
-
-%%%%%%%%% Bottom of the page
-\begin{center}\Large{Tuteur: Lo\"{i}c Ponger}\end{center}~\\%[0.5cm]
+%%%%%%%% Center %%%%%%%%
+\begin{center}\LARGE{\textbf{Sarah Kaddah}}\end{center}
+%%%%%%%%% Footer %%%%%%%%%
+\begin{center}\Large{Tuteur: Lo\"{i}c Ponger}\end{center}~\\
 \center{\large{Structure et Instabilité des Génomes}}
-\center{\large{ MNHN - CNRS UMR 7196 / INSERM U1154 - Sorbonne Universités}}\\%[1cm]
+\center{\large{ MNHN - CNRS UMR 7196 / INSERM U1154 - Sorbonne Universités}}\\
 Muséum national d'Histoire naturelle, 43 rue Cuvier 75005 PARIS \\ [1cm]
-%	\begin{center}
-%		\includegraphics[scale=0.2]{img/mnhn.jpg} \hfill
-%		\includegraphics[scale=0.08]{img/cnrs.png} \hfill
-%		\includegraphics[scale=0.08]{img/inserm.jpg}
-%	\end{center} 
-
+%%%%%%%%% Logos %%%%%%%%%
 \begin{tabular}{cc}
- \hspace*{2.5cm} &  
-\includegraphics[scale=0.2]{img/mnhn.jpg}
+	\hspace*{2.5cm} &  
+	\includegraphics[scale=0.2]{img/mnhn.jpg}
 \end{tabular}
-\hfill
+	\hfill
 \begin{tabular}{c}
-\includegraphics[scale=0.08]{img/inserm.jpg}
+	\includegraphics[scale=0.08]{img/inserm.jpg}
 \end{tabular}
-\hfill
+	\hfill
 \begin{tabular}{cc}
-\includegraphics[scale=0.08]{img/cnrs.png} &
-\hspace*{2.5cm}
+	\includegraphics[scale=0.08]{img/cnrs.png} &
+	\hspace*{2.5cm}
 \end{tabular}
-
-%%%%%%%%% END
-  \end{center}
-  \end{sffamily}
+	\end{center}
+	\end{sffamily}
 \end{titlepage}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%Remerciements%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section*{\begin{center}Remerciements\end{center}}~\\[0.2cm]
 \addcontentsline{toc}{section}{Remerciements}
 Merci à Namrod pour toute la partie sur la bibliographie. Retrouvez ses questions FAQ qui ont permis la rédaction de cette partie.\\
@@ -96,53 +83,55 @@ Merci à Namrod pour toute la partie sur la bibliographie. Retrouvez ses questio
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%Table des matières%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newpage
 \tableofcontents
 \setcounter{page}{0}
 \thispagestyle{empty}
 \newpage 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%Introduction%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
 \section{Introduction}
 \subsection{Le centromère}
-Le centromère est une structure chromatinienne caractérisé par la présence de CENP-A. Cette protéine, très conservée au cours de l'évolution, est un variant de l'histone H3. Son rôle est de fixer la position du kinétochore par un mécanisme encore peu connu. En effet, le centromère est le site d'assemblage du kinétochore, un ensemble d'ADN et de protéines. Il permet l'attachement du fuseau mitotique pour la ségrégation des chromosomes durant la division cellulaire chez les eucaryotes. Le centromère et les protéines impliquées sont relativement bien conservés. Au contraire, l'ADN sous-jacent est très diversifié et l'organisation varie d'un taxon à l'autre. Cependant, une caractéristique commune est retrouvée chez toute les espèces: de l'ADN centromérique répété en tandem nommé ADN satellite. Ces répétitions sont issues d'événements d'amplification, tels les crossovers inégaux, la conversion de gènes, les cercles roulants ou la transposition de séquences.[Malik and Henikoff, 2002; Plohl et al. 2012]
-Ces séquences représentent 5\% du génome. Les répétitions s'étendent de 7pb à 3,2kb avec des séquences de 145-180kb le plus souvent.  
+Le centromère est une structure chromatinienne qui intervient pendant la division cellulaire chez les eucaryotes. Il permet l'attachement du fuseau mitotique et la ségrégation des chromosomes \cite{Cleveland2003}.  Le kinétochore, un assemblage de protéines, trouve son cite d'attachement au niveau du centromère, auquel vont s'attacher les  microtubules aux chromosomes \cite{Santaguida2009}. La chromatine centromérique est caractérisée par la présence de la protéine CENP-A, un variant de l'histone H3, très conservé au cours de l'évolution. Celle-ci fixe la position du kinetochore par un mécanisme encore mal connu \cite{Sullivan1994}.
+
+Bien que la fonction du centromère et des protéines sous-jacentes soient relativement bien conservées, les séquences et l'organisation du génome varie d'un taxon à l'autre. Cependant une structure commune se distingue étant de l'ADN répété en tandem, appelée ADN satellite \cite{Henikoff2001}. Ces séquences peuvent représenter environ 5\% du génome et la taille des unités de répétitions peut varier entre 7pb et 3,2kb \cite{Cellamare2009}.
 
 \subsection{L'ADN $\alpha$-satellites}
-L'ADN satellite chez les Primates est connu sous le nom d'$\alpha$-satellite. Ces séquences centromériques répétées en tandem sont riches en AT. 
+L'ADN satellite chez les Primates est connu sous le nom d'$\alpha$-satellite. Ces séquences centromériques répétées en tandem sont riches en AT et un monomère fait 171 pb de long environ \cite{Willard1991}. Ces séquences ont été mises en évidence pour la première fois chez \textit{Chlorocebus aethiops} dans les années 1970 \cite{Kurnit1974}. des homologues ont été retrouvés chez d’autres espèces de primate \cite{Lee1997}. Néanmoins ces séquences ont été essentiellement étudiées chez l’homme.
 
-Des études chez l'Homme propose un modèle évolutif. La répartition des $\alpha$-satellites suivrait une répartition spécifique selon l'âge des familles. Les familles les plus jeunes s'insèrent au cœur du centromère, repoussant les familles les plus anciennes jusqu'aux regions voisines, appelé péri-centromère.\\
+Les séquences ont un taux d’identité qui variede  60 à 100\% \cite{Alexandrov2001}. Les séquences les plus similaires peuvent être regroupées en familles (Figure \ref{shepelev}). Ces familles résultent d'un même évènement d'amplification. Des études chez l'homme ont montré que les séquences d'une même famille se regroupaient phylogénétiquement mais aussi spatialement le long d'un chromosome \cite{Shepelev2009}. Ces observations ont permis de proposer un modèle évolutif avec des centromères en expansion. Les familles les plus récentes s’inséreraient au cœur du centromère, dans la partie active, repoussant les familles les plus anciennes jusqu'aux régions voisines, appelées péri-centromères. Les familles les plus anciennes ont une organisation monomérique tandis que les familles récentes sont sous forme d'organisation d'ordre supérieur ou \textit{Higher Order Repeat} (HOR), où un groupe de monomères appartenant à des familles différentes sont répétées en bloc les un derrière les autres ( Figure \ref{organisation_spatiale}).
 
-Un monomère a une longueur de 171pb et il peut être répété des milliers de fois. Les monomères peuvent être répartis en famille selon leur similarité, les séquences ayant un taux d'identité supérieur à 70\%. Ces séquences ont soit une organisation monomérique soit une organisation en répétition d'ordre supérieur (Fig. 1). Dans le premier cas, les séquences d'une même famille sont répétés en tandem. Dans le deuxème cas, une suite de monomères appartenant à différentes familles forme une unité, qui elle est répétée en tandem. 
+\begin{figure}
+	\center
+		\includegraphics[height=6cm, width=6cm]{img/shepelev.png}
+		\caption{\textbf{Arbre phylogénétique des séquences $\alpha$-satellites du bras p du chromosome X:} L’arbre réunit 1431 monomères présents sur le contig nt011630 \cite{Shepelev2009}.\label{shepelev}}
+\end{figure}
 
-Ces séquences peuvent avoir un site de liaison à la protéine centromérique CENP-B un motif spécifique de 17pb. Cette protéine, qui reconnaît et se fixe sur l'ADN, serait présente chez de nombreuses familles de Primates. La protéine pJ$\alpha$, une protéine peu caractérisée, reconnaît un motif qui remplace celui de CENP-B.
-
-Les $\alpha$-satellites ont essentiellement été étudiées chez l'homme. Modèle évolutif avec les centromères en expansion. Une hypothèse concernant l'âge des séquences découle de ces recherches: les séquences les plus récentes apparaissent au coeur du centromères, déplançant les plus anciennes au péricentromère. D'autres études chez le gorille ont été faites. Le rôle des $\alpha$-satellites est encore mal connu. 
+Le rôle des $\alpha$-satellites est encore mal connu dans la fonction du centromère. Seule la protéine CENP-B serait capable de reconnaître spécifiquement un motif d'environ 17 pb (CENP-B box). Bien que cette protéine soit présente chez tous les organimes, parfois la CENP-B box est remplacée par un autre motif dans certaines familles, liant une protéine très mal caractérisée nommée pJ$\alpha$ (pJ$\alpha$ box)\cite{Romanova1996}.
 
 \begin{figure}
 	\center
 		\includegraphics[height=3.5cm, width=12cm]{img/AS_organization.png}
-		\caption{\textbf{Organisation spatiale des $\alpha$-satellites:} Le coeur du centromère (bleu foncé) est organisé en répétition d'ordre supérieur. Le péricentromère(bleu clair) a une organisation monomérique. Un monomère d'une même famille est représenté par une petite flèche de même couleur. Les points rouges représentent les sites de fixation à CENP-B ou pJ$\alpha$.}
+		\caption{\textbf{Organisation spatiale des $\alpha$-satellites:} Le cœur du centromère (bleu foncé) est organisé en répétition d'ordre supérieur. Le péri-centromère (bleu clair) a une organisation monomérique. Un monomère d'une même famille est représenté par une petite flèche de même couleur. Les points rouges représentent les sites de fixation à CENP-B ou pJ$\alpha$. \label{organisation_spatiale}}
 \end{figure}
 
 \subsection{Le sujet de stage}
 
-Peu d'informations sur les $\alpha$-satellites figurent chez les autres espèces de primates, et aucune relation inter-espèce n'a été réalisée. Les études se basant sur un séquençage haut-débit est appliqué chez l'homme (cité ci-dessus) et chez le Gorille. [compléter] L'équipe d'accueil de mon stage "ADN répété, Chromatine, Evolution" ou ARChE, a récemment développé une approche de séquençage haut débit, ciblée sur les séquences $\alpha$-satellites chez deux espèces: \textit{Cercopithecus solatus} et \textit{Cercopithecus pogonias}.
+L'objectif de ce stage est d'étudier les $\alpha$-satellites à partir de données de séquençage haut débit afin de comprendre la fonction de ces séquences. 
 
-Les méthodes basées sur l'alignement et la phylogénie sont très limitées pour étudier ces séquences. Elles ne permettent pas de traiter des jeux de données conséquents, or un monomère peut avoir des milliers de copies dans un seul génome. De plus, ces méthodes non-objectives ne permettent pas de faire des comparaisons entre espèces.
+Peu d'informations sur les $\alpha$-satellites existent chez les autres espèces de primates, et aucune relation inter-espèce n'a été réalisée, le séquençage et l'assemblage du génome étant difficiles. Jusqu'à présent, les études se basant sur un séquençage haut-débit ont été appliquées chez l'homme (cité ci-dessus) et chez le Gorille. L'équipe d'accueil de mon stage "ADN répété, Chromatine, Evolution" ou ARChE, a récemment développé une approche de séquençage haut débit, ciblée sur les séquences $\alpha$-satellites chez le \textit{Cercopithecus solatus} et le \textit{Cercopithecus pogonias}. Ces deux espèces ont beaucoup d'ADN satellite et de réarrangements chromosomiques et de nombreux, avec l'apparition de nombreux centromères. Cette étude a également montré les limites des approches classiques (alignements et phylogénie). Ces méthodes ne permettent pas de traiter des jeux de données conséquents, or un monomère peut avoir des milliers de copies dans un seul génome. De plus, ces méthodes non-objectives ne permettent pas de faire des comparaisons entre espèces.
 
 Pour remédier à ce problème, une méthode de classification automatisée des $\alpha$-satellites a été implémentée en R en 2016, puis améliorée en 2017 en Python dans le laboratoire. Ce programme permet de traiter des centaines de milliers de séquences, quelque soit le nombre ou la taille des familles. De plus, cette méthode est objective et peut être appliquée à plusieurs espèces, permettant ainsi une comparaison inter-espèce des familles $\alpha$-satellites. 
 
-L'objectif de ce stage est de comprendre la fonction des $\alpha$-satellites, notamment en caractérisant les familles issues de cette classification chez quatre espèces proches de primates. Parmi ces espèces, les deux Cercopithèques séquencés dans le laboratoire permettront d'avoir un avis objectif sur la méthode de classification.  Dans une deuxième temps, les mécanismes d'évolution pourront être déduits à partir d'une comparaison inter-espèce révélant les différences et les familles communes. 
+Mon sujet consiste à appliquer cette méthode aux jeux de données déjà publiés pour évaluer la méthode. Dans une deuxième temps, cette méthode est appliquée à deux autres primates dans le but de  caractériser les familles d'espèces proches de primates. Les mécanismes d'évolution pourront être déduits à partir d'une comparaison inter-espèce révélant les différences et les familles communes. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%M & M%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \section{Matériel et méthode}
-\subsection{Choix des espèces}
+\subsection{Les espèces étudiées}
 
 	\begin{figure}
 		\center
@@ -151,11 +140,11 @@ L'objectif de ce stage est de comprendre la fonction des $\alpha$-satellites, no
 		\label{fig:arbre_presentation}}
 	\end{figure}
 
-Les critères de sélection dépendent de la disponibilité des séquences de qualité. Deux espèces du laboratoire sont choisies, le \textit{C. solatus} et \textit{C. pogonias}, et deux espèces proches (Fig. \ref{fig:arbre_presentation}), le \textit{Macaca fascicularis} et le \textit{Chlorocebus sabaeus}.  
+Les données proviennent de reads courts environ de 171 pb, soit la taille d'un monomère. Les critères de sélection dépendent de la disponibilité des séquences de qualité parmi 10 espèces. Le \textit{C. solatus} et le \textit{C. pogonias} sont choisis ainsi que deux espèces proches (Figure \ref{fig:arbre_presentation}), le \textit{Macaca fascicularis} et le \textit{Chlorocebus sabaeus}. Tous les $\alpha$-satellites sont alignés sur les monomères de \textit{C. solatus} et \textit{C. pogonias} étudiés précédemment.
 
 \subsection{Méthode de classification}
 	\subsubsection{Principe}
-Cette méthode \cite{rapport_florence} répartit des séquences $\alpha$-satellites en familles selon la similarité. La classification est hiérarchique dichotomique. Au départ, une table contenant les fréquences des 5-mers est calculée pour chaque monomère. Ensuite une boucle itérative est exécutée pour séparer les séquences en groupes tant que les nouveaux groupes formés sont divisibles.
+Cette méthode a été développée par Florence Jornod (stage M2, 2016-2017). Elle répartit des séquences $\alpha$-satellites en familles selon la similarité. La classification est hiérarchique dichotomique. Au départ, une table contenant les fréquences des 5-mers est calculée pour chaque monomère. Ensuite une boucle itérative est exécutée pour séparer les séquences en groupes tant que les nouveaux groupes formés sont divisibles.
 
 	\subsubsection{Répartition itérative}
 Une Analyse en Composante Principale (ACP) est effectuée sur la table des fréquences des 5-mers afin de réduire les dimensions du jeu de données et d’obtenir des variables indépendantes. Des distances euclidiennes sont calculées entre toutes les paires de séquence dans l’espace défini par les premières composantes de l’ACP. 
@@ -168,72 +157,83 @@ Le premier critère de validation est la taille du sous-groupe. Si un groupe att
 Un seuil de \textit{matepair} est fixé à 0.90, pour avoir des groupes homogènes. Si au moins une des valeurs de \textit{matepair} est au-dessous de ce seuil, les sous-groupes sont considérés comme formant un seul groupe et le groupe initial est sauvegardé comme une famille unique. Si les \textit{matepairs} sont au-dessus d’un certain seuil, les deux sous-groupes sont ajoutés séparément à la file pour être potentiellement redivisés ultérieurement.
 
 	\subsection{Analyse des séquences}
-L'alignement des séquence est fait avec muscle \cite{Edgar2004} et SeaView \cite{Gouy2009}, un éditeur d'alignements multiples. 
-La phylogénie est construite avec la méthode du maximum de vraisemblance (PhyML) \cite{Guindon2009a}. Le modèle F84 est utilisé pour la construction de l'arbre. Le support de branche est aLRT (SH-like). La fréquence d'équilibre nucléotidique est optimisée. Le ratio de transition et de transversion est fixé à 4. Aucun site est considéré comme invariable. Le taux de variation à travers le site est optimisé. Les opérations de recherche d'arbre est NNI et l'arbre de départ est défini avec la méthode de Neighbor-Joining \cite{Saitou1987} avec une topologie optimisée.
+	
+Les séquences monomériques sont comparées à partir de leur composition en 5-mers dans le but d'identifier des regroupements d'$\alpha$-satellites sans passer par l'étape d'alignement. Pour chaque ensemble de monomères,	la table de fréquence des 5-mers est analysé en utilisant l'Analyse en composante principale pour réduire l'espace de complexité pour pourvoir visualiser les données sur les premiers plans factoriels.
+	
+L'alignement des séquences est fait avec muscle \cite{Edgar2004} et visualisé avec Seaview (problème de biblio UTF8). La phylogénie est construite avec la méthode du maximum de vraisemblance (PhyML) \cite{Guindon2009}. Le modèle F84 est utilisé pour la construction de l'arbre. Le support de branche est aLRT (SH-like). La fréquence d'équilibre des nucléotides, le ratio de transition et de transversion et les taux de variation sont optimisés.
+
 Les consensus sont obtenus avec des scripts développés par l'équipe. Les motifs CENP-B (TTCGTTGGAA[AG]CGGGA), PJ$\alpha$ (TTCCTTTT[CT]CACC[AG]TAG) et pK$\beta$ (CTATAGGGCCAAAGGAA) ont été identifiés avec le logiciel fuzznuc (package EMBOSS) \cite{Rice2000} et en autorisant 2 différences au maximum par rapport au consensus.
 
-%###########################################################################################################
-\section{Résultat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%Résultats 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Résultats}
 	\subsection{Caractérisation intraspécifique des familles}
+	Les séquences ont été classées en utilisant une méthode de classification objective développée dans l'équipe. Le nombre de familles est déterminé indirectement par un critère sélectionnant des classes à la fois homogène et différentes les unes des autres.
+	
 			\subsubsection{Identification des familles}
-		
-		\begin{table}
+	
+				\begin{table}
 			\center
 			\begin{tabular}{|c|c|c|c|c|}
    			\hline
-  			\textbf{Espèce} & \textit{C. solatus} & \textit{C. pogonias} & \textit{C. sabaeus} & \textit{M. fascicularis}\\
-		    \hline
-   			\textbf{Nb. seq. au total} & 105 529 & 112 902 & 29 842 & 235 535 \\
+  			\textbf{Espèce} & \textbf{Nb séq tot} & \textbf{Nb fam tot} & \textbf{Nb fam > 100 séq} & \textbf{\%  seq analysé}\\
+  		    \hline
+   			\textit{C. solatus} & 105 529 & 564 & 12 & 96.03  \\
    			\hline
-   			\textbf{Nb. fam.} & 564 & 132 & 338 & 3694\\
+    		\textit{C. pogonias} & 112 902 & 132 & 13 & 98.71\\
    			\hline
-   			\textbf{Nb. grandes fam.} & 12 & 13 & 43 & 114\\
+   			\textit{C. sabaeus} & 29 842 & 338 & 43 & 89.11\\
    			\hline
-   			\textbf{\% seq. ignorées} & 3.97 & 1.29 & 10.89 & 11.06\\
-   			\hline
+   			\textit{M. fascicularis} & 235 535 & 3694 & 114 & 88.94\\
+   			\hline			
 			\end{tabular}
-			\caption{Résumé du jeu de données et des résultats préliminaires de la classification.}
+			\caption{Résumé du jeu de données et des résultats de la classification.}
 			\label{tab_res}
 		\end{table}
 		
 		\begin{figure}
 			\center
 			\includegraphics[scale=0.45]{img/distribution_familles.png}
-			\caption{\textbf{Distribution des familles en fonction de la taille.}}
+			\caption{\textbf{Distribution des familles en fonction du nombre de séquences.}}
 			\label{dist_fam} 
 		\end{figure}
 
-	A l'issue de la classification, seules les familles ayant plus de 100 séquences, qualifiées de grandes familles, sont conservées pour l'analyse. Le nombre de familles conservées diminue considérablement après élimination des petites familles (<100 séquences) mais ces familles ne représentent que 11\% du jeu de données au plus (Tableau \ref{tab_res}). Les \textit{C. solatus} et \textit{C. pogonias} ont une dizaine de familles, \textit{C. sabaeus} en a 43, et le \textit{M. fascicularis} en a 114. Malgré le nombre de familles qui diffère d'une espèce à l'autre, la distribution des familles est similaire chez les quatre espèces. Les plus petites familles sont très nombreuses et et la fréquence diminue quand la taille augmente (Figure \ref{dist_fam}). Le \textit{C. solatus} possède une grande famille de 80 000 séquences, \textit{C. pogonias} de 94 000 séquences, \textit{M. fascicularis} possède quatre familles de plus de 10 000 séquences. La plus grande famille du \textit{C. sabaeus} fait 5000 séquences. Ces familles se démarquent des autres familles par leur taille.
+	A l'issue de la classification, seules les familles ayant plus de 100 séquences, appelées grandes familles, sont conservées pour l'analyse. Le nombre de familles conservées diminue considérablement après élimination des petites familles (<100 séquences) mais ces familles ne représentent que 11\% du jeu de données au plus (Tableau \ref{tab_res}). Malgré le nombre de familles qui diffère d'une espèce à l'autre, la distribution des familles est similaire chez les quatre espèces. Les plus petites familles sont très nombreuses et et la fréquence diminue quand la taille augmente (Figure \ref{dist_fam}). 
 
 		\begin{figure}	
 			\includegraphics[scale=0.4]{img/ACP_experimental.png}  \\
-			\caption{\textbf{Caractérisation visuelle des familles $\alpha$-satellite chez \textit{C. solatus} et \textit{C. pogonias} à partir d'une ACP:}Le nom des familles est indiqué sur les graphiques. Un point représente un monomère. \textbf{A.} \textit{C. solatus}. \textbf{B.} \textit{C. pogonias}.}
+			\caption{\textbf{Caractérisation visuelle des familles $\alpha$-satellite chez \textit{C. solatus} et \textit{C. pogonias} à partir d'une ACP, basée sur la composition en 5-mers des monomères :}Le nom des familles est indiqué sur les graphiques. Un point représente un monomère. \textbf{A.} \textit{C. solatus}. \textbf{B.} \textit{C. pogonias}.}
 			\label{fig:ACP_exp} 
 	\end{figure}	
 	
-	Les espèces \textit{C. solatus} et \textit{C. pogonias} sont analysées dans un premier temps pour comparer la classification automatisée avec la classification expérimentale, une méthode visuelle établie d'après une ACP (Fig. \ref{fig:ACP_exp}).Expérimentalement, 6 familles $\alpha$-satellites ont été déterminées chez les Cercopithèques. Ces deux espèces partagent deux grandes familles monomériques, C1 et C2, et deux familles formant un dimère, C3-C4, de l'ordre d'une centaine de séquences chacune. Le \textit{C. pogonias} possède les familles supplémentaires C5 et C6.\\
+	Les espèces \textit{C. solatus} et \textit{C. pogonias} sont analysées dans un premier temps pour comparer la classification automatisée avec la classification empirique (citer cacheux et al, PB UTF8). Ces familles ont été définies manuellement à partir d'une ACP basée sur la composition en 5-mers de tous les monomères (Fig. \ref{fig:ACP_exp}).Expérimentalement, 6 familles $\alpha$-satellites ont été définies empiriquement et confirmé expérimentalement chez les Cercopithèques. Ces deux espèces partagent deux grandes familles monomériques, C1 et C2, et deux familles formant un HOR d'ordre 2, C3-C4, de l'ordre d'une centaine de séquences chacune. Le \textit{C. pogonias} possède les familles supplémentaires C5 et C6.
+	
 		\begin{table}
 			\center
 			\begin{tabular}{|c|c|c|}
 	    	\hline
-			\backslashbox{\bf{Fam. exp.}}{\bf{Espèces}} & \textit{C.solatus} & \textit{C.pogonias}\\
+			\textbf{Classification publiée} &  \textbf{\textit{C. solatus}}  & \textbf{\textit{C. pogonias}}\\
 			\hline
 			C1 &  1  & 10\\
 			\hline
 			C2 & 11  & 1 \\
 			\hline
-			C3 & (1) & 1 \\
+			C3 & 1* & 1 \\
 			\hline
-			C4 & (1) & (1) \\
+			C4 & 1* & 1* \\
 			\hline
 			C5 & - 	 &  1 \\
 			\hline
 			C6 & -   &  0 \\
 			\hline
+			\textbf{Total} & 12 + 2* < 100 seq  &  13 + 1* <100 seq \\
+			\hline
 		\end{tabular}
-		\caption{\textbf{Résumé du tableau de contingence:} Comptage des familles issues de la classification et leur répartition théorique dans les familles expérimentales (C1 à C6). Les valeurs entre parenthèse sont des petites familles (< 100 séquences) qui ne sont pas prises en compte dans le reste des analyses.}
+		\caption{\textbf{Comparaison des classifications automatiques avec celles publiées précedemment (Cacheux et al, 2016 et 2018)}}
 		\label{tab_count_fam}
-	\end{table}	
+	\end{table}
+		
 	Bien que le nombre de grandes familles soit relativement proche entre ces deux espèces, les résultats diffèrent significativement (Tableau \ref{tab_count_fam}). Toutes les familles chez le \textit{C. solatus} sont retrouvées: 11 familles forment la famille C2, une famille forme la famille C1 et les familles C3 et C4 sont retrouvées dans des petites familles d'environ 80 séquences chacune. Chez \textit{C. pogonias}, toutes les familles sont retrouvées sauf la famille C6. La famille C1 est répartie en 10 familles, les familles C2, C3 et C5 sont retrouvées entièrement, la famille C4 est également retrouvée sous la forme d'une petite famille de 86 séquences. Chez le \textit{C. solatus}, la famille C2 est divisée en plusieurs familles et la famille C1 est retrouvée dans une seule famille. La situation inverse est retrouvée  chez \textit{C. pogonias}.
 		\begin{figure}	
 			\begin{tabular}{cc|cc}
@@ -251,44 +251,56 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 		} 
 \end{figure}
 			
-			Pour visualiser cette comparaison, des couleurs sont assignées aux familles issues de la classification automatisée. Ces couleurs sont superposées aux résultats expérimentaux en noir.  Chez \textit{C. solatus}, la famille C1 est entièrement retrouvée dans une famille. La famille C2 est répartie en plusieurs familles. Deux familles intermédiaires (rouge et bleue) sont visibles entre la famille C1 (vert)  et C2 (orange). Elles ne sont pas distinctes.  Une famille supplémentaire (turquoise) se démarque. Pour confirmer cette division de la famille C2, la visualisation de l'ACP des 5-mers est observée en fonction des composantes 1 et 3. Les familles intermédiaires sont toujours confondues, contrairement à la famille turquoise qui forme une famille à part entière. Pour certifier ce fait, l'arbre construit atteste que chaque famille est bien retrouvée, notamment les familles intermédiaires qui forment bien deux familles. Chez \textit{C. pogonias}, les familles C2, C4 et C5 sont bien retrouvées. La famille C6 se fond dans la famille C1 (en vert). La famille C1 est divisée en deux familles supplémentaires (rose et violet). La visualisation des composantes 1 et 3 de l'ACP ne permet pas de trancher sur la classification. L'arbre montre que les familles en rose et violet sont très proches.  
+			La diversité de ces familles a été analysée avec une ACP basée sur sur la composition en 5-mers (Figure \ref{fig:so_po_acp_tree}). Afin de valider la surclusterisation observée de la famille C2 chez \textit{C. solatus}. On observe toutefois une sur-clusterisation de certaines familles dont la pertinence est confirmée par l'ACP ou les phylogénies. Chez \textit{C. solatus}, la famille C1 est entièrement retrouvée dans une famille. La famille C2 est répartie en plusieurs familles. Deux familles intermédiaires (rouge et bleue) sont visibles entre la famille C1 (vert)  et C2 (orange). Elles ne sont pas distinctes.  Une famille supplémentaire (turquoise) se démarque. Pour confirmer cette division de la famille C2, la visualisation de l'ACP des 5-mers est observée en fonction des composantes 1 et 3. Les familles intermédiaires sont toujours confondues, contrairement à la famille turquoise qui forme une famille à part entière. Pour certifier ce fait, l'arbre construit atteste que chaque famille est bien retrouvée, notamment les familles intermédiaires qui forment bien deux familles. Chez \textit{C. pogonias}, les familles C2, C4 et C5 sont bien retrouvées. La famille C6 se fond dans la famille C1 (en vert). La famille C1 est divisée en deux familles supplémentaires (rose et violet). La visualisation des composantes 1 et 3 de l'ACP ne permet pas de trancher sur la classification. L'arbre montre que les familles en rose et violet sont très proches.  
+			
+			La classification automatique permet de retrouver les familles identifiées dans les travaux, excepté la famille C6.
 			 
 			\subsubsection{Motifs potentiellement fonctionnels}
 \begin{figure}
 	\center	
 	\includegraphics[scale=0.4]{img/graphique_motifs.png}
-	\caption{\textbf{Présence des motifs CENP-B, pJ$\alpha$ ou pK$\beta$ par famille:}
-	Le pourcentage de séquences par famille ayant le motif pJ$\alpha$ est en vert, pK$\beta$ en orange et CENP-B en bleu. Chaque famille est représentée en fonction de sa taille.
+	\caption{\textbf{Fréquences des motifs CENP-B, pJ$\alpha$ ou pK$\beta$ dans les familles:} Les motifs ont été cherchés sur la base de leur consensus en autorisant deux différences. Le pourcentage de séquences par famille ayant le motif pJ$\alpha$ est en vert, pK$\beta$ en orange et CENP-B est absent de toutes les familles. Chaque famille est représentée en fonction de sa taille.
 	\label{fig:motif}} 
 \end{figure}
-			La protéine CENP-B est présente chez toutes les espèces, mais les Cercopithèques ne possèdent pas son site de liaison. La protéine pJ$\alpha$ est une protéine peu connue mais dont le site de liaison est déterminé. Le motif pK$\beta$ est un site commun aux familles n'ayant ni CENP-B ni pJ$\alpha$. Ces trois motifs sont recherchés pour chaque famille de chaque espèce sur la base des consensus (partie matériel et méthodes) avec 2 mismatchs autorisés dans le but de caractériser ces familles. En effet, CENP-B est absent chez \textit{C. solatus} et \textit{C. pogonias}. Le \textit{C. sabaeus} et le \textit{M. fascicularis} n'ont pas ce motif non plus. Par contre plus de 90\% des familles chez les quatre espèces ont le motif pJ$\alpha$ mais à des niveaux différents.\\
-		La totalité des familles chez \textit{C. solatus} ont le motif, dont 8 à plus de 75\%. Chez le \textit{C. pogonias}, 12 familles sur 13 ont le motif à plus de 75\%. Par ailleurs, la plus grande famille, C1, ayant plus de 80 000 séquences chez ces deux espèces, se démarque avec un pourcentage à 95\%. Le \textit{C. sabaeus} présente 39 familles avec ce motif, dont 7 l'ayant à plus de 75\%. Le \textit{M. fascicularis} a des pourcentages pour le motif pJ$\alpha$ qui varie entre 1\% et 97\%. Cette espèce a 28 familles avec le motif à plus de 75\% dont une famille de  40 000 séquences et une autre de 14 000 séquences.\\
-			Le motif pK$\beta$ est présent lorsque pJ$\alpha$ est absent de la famille. Il est absent chez \textit{C. solatus}. Seule la famille C3 a ce motif à 80\% chez \textit{C. pogonias}. Le \textit{C. sabaeus} a quatre familles avec le motif, dont deux à 79\% et l'autre à 29\%. Le \textit{M. fascicularis} a cinq familles avec ce motif. La famille ayant le motif à 93\% est une grande famille de 64 000 séquences. Les deux autres familles ont le motif à 0.76\% et 0.50\%.\\
-			Les quatre espèces ont des points en commun concernant l'absence du motif CENP-B et quelques familles ayant pK$\beta$. Cependant pour le motif pJ$\alpha$, les \textit{C. solatus} et \textit{C. pogonias}
- ont des pourcentages relativement proches mais qui diffèrent du \textit{M. fascicularis} et du \textit{C. sabaeus}, dont les valeurs sont intermédiaires. Chaque famille a un motif pour toutes les espèces excepté le \textit{M. fascicularis} qui a 6 familles sans motifs.\\ 			
+			
+			La protéine CENP-B est présente chez toutes les espèces, mais les Cercopithèques ne possèdent pas son site de liaison. La protéine pJ$\alpha$ est une protéine peu connue mais dont le site de liaison est déterminé. Le motif pK$\beta$ est un site commun aux familles n'ayant ni CENP-B ni pJ$\alpha$. Ces trois motifs sont recherchés pour chaque famille de chaque espèce sur la base des consensus (partie matériel et méthodes) avec 2 mismatchs autorisés dans le but de caractériser ces familles. En effet, CENP-B est absent chez \textit{C. solatus} et \textit{C. pogonias}. Le \textit{C. sabaeus} et le \textit{M. fascicularis} n'ont pas ce motif non plus. Par contre plus de 90\% des familles chez les quatre espèces ont le motif pJ$\alpha$ mais à des niveaux différents.
+			
+		La totalité des familles chez \textit{C. solatus} ont le motif, dont 8 à plus de 75\%. Chez le \textit{C. pogonias}, 12 familles sur 13 ont le motif à plus de 75\%. Par ailleurs, la plus grande famille, C1, ayant plus de 80 000 séquences chez ces deux espèces, se démarque avec un pourcentage à 95\%. Le \textit{C. sabaeus} présente 39 familles avec ce motif, dont 7 l'ayant à plus de 75\%. Le \textit{M. fascicularis} a des pourcentages pour le motif pJ$\alpha$ qui varie entre 1\% et 97\%. Cette espèce a 28 familles avec le motif à plus de 75\% dont une famille de  40 000 séquences et une autre de 14 000 séquences.
+		
+			Le motif pK$\beta$ est présent lorsque pJ$\alpha$ est absent de la famille. Il est absent chez \textit{C. solatus}. Seule la famille C3 a ce motif à 80\% chez \textit{C. pogonias}. Le \textit{C. sabaeus} a quatre familles avec le motif, dont deux à 79\% et l'autre à 29\%. Le \textit{M. fascicularis} a cinq familles avec ce motif. La famille ayant le motif à 93\% est une grande famille de 64 000 séquences. Les deux autres familles ont le motif à 0.76\% et 0.50\%.
+			
+			Les quatre espèces ont des points en commun concernant l'absence du motif CENP-B et quelques familles ayant pK$\beta$. Cependant pour le motif pJ$\alpha$, les \textit{C. solatus} et \textit{C. pogonias} ont des pourcentages relativement proches mais qui diffèrent du \textit{M. fascicularis} et du \textit{C. sabaeus}, dont les valeurs sont intermédiaires. Chaque famille a un motif pour toutes les espèces excepté le \textit{M. fascicularis} qui a 6 familles sans motifs.
+				
 			\subsubsection{Similarité entre familles}
 \begin{figure}	
 	\center
 	\includegraphics[scale=0.4]{img/graphique_similarity.png}
-	\caption{\textbf{Pourcentage de divergence observée au sein d'une famille:}
+	\caption{\textbf{Pourcentage de divergence observée de chaque famille:}
 	Un point correspond à une famille et son pourcentage de divergence observé.
 	\label{fig:divergence}
 		} 
 \end{figure}
-	Le pourcentage de divergence observée par famille est calculé sur 500 séquences tirées aléatoirement dans une famille pour estimer l'âge de celles-ci. Les \textit{C. solatus} et \textit{C. pogonias} ont des pourcentages relativement faibles ne dépassant pas 15\%, le \textit{M. fascicularis} a des valeurs intermédiaires variant de 0.1\% à 28\%, et \textit{C. sabaeus} a les valeurs les plus élevées allant de 11\% à 28\%.\\
-	Les familles qui correspondraient aux familles C1 et C5 ont un pourcentage autour de 5\%. Les autres familles chez \textit{C. solatus} ont une moyenne de 10.85\%. Les familles de taille moyenne (quelques centaines de séquences) qui correspondraient à la famille C1 ont des pourcentages inférieurs à 3\% chez \textit{C. pogonias} et les trois familles restantes ont des valeurs de 13\% en moyenne. Les familles du \textit{C. sabaeus} ont en moyenne 16.8\% de divergence observée, la taille n'ayant aucun rapport au pourcentage. Le \textit{M. fascicularis} a trois familles avec un pourcentage inférieur à 1\% et cinq familles à 6\% en moyenne. Les 106 familles restantes ont un pourcentage supérieur à 10\%.\\
-	Le pourcentage de similarité est semblable chez les \textit{C. solatus} et \textit{C. pogonias}. Le \textit{M. fascicularis} a  quelques familles qui ont le même comportement mais il a également beaucoup de familles aux pourcentages très élevés, tandis que la majorité des familles chez le \textit{C. sabaeus} a une grande partie de ses familles avec de grands pourcentages.
+	Le pourcentage de divergence observée par famille est calculé sur 500 séquences tirées aléatoirement dans une famille. Elle permettrait d'estimer l'âge de ces familles. Les \textit{C. solatus} et \textit{C. pogonias} ont des pourcentages relativement faibles ne dépassant pas 15\%, le \textit{M. fascicularis} a des valeurs intermédiaires variant de 0.1\% à 28\%, et \textit{C. sabaeus} a les valeurs les plus élevées allant de 11\% à 28\%.
 	
-
-%########################################################################################################
+	Les familles qui correspondraient aux familles C1 et C5 ont un pourcentage autour de 5\%. Les autres familles chez \textit{C. solatus} ont une moyenne de 10.85\% de divergence observée. Les familles de taille moyenne (quelques centaines de séquences) qui correspondraient à la famille C1 ont des pourcentages inférieurs à 3\% chez \textit{C. pogonias} et les trois familles restantes ont des valeurs de 13\% en moyenne. Les familles du \textit{C. sabaeus} ont en moyenne 16.8\% de divergence observée, la taille n'ayant aucun rapport au pourcentage. Le \textit{M. fascicularis} a trois familles avec un pourcentage inférieur à 1\% et cinq familles à 6\% en moyenne. Les 106 familles restantes ont un pourcentage supérieur à 10\%.
 	
+	Le pourcentage de similarité est semblable chez les \textit{C. solatus} et \textit{C. pogonias}. Le \textit{M. fascicularis} a  quelques familles qui ont des pourcentages faibles mais il a également beaucoup de familles aux pourcentages très élevés, tandis que la majorité des familles chez le \textit{C. sabaeus} a grands pourcentages.
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%Résultats 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 	\subsection{Comparaison inter-espèce}
-	Pour étudier les mécanismes d'évolution des $\alpha$-satellites, une classification inter-espèce ou "super-classification" (SC) permet de comprendre les différences entre espèces. Pour chaque espèce, 100 séquences par grande famille (> 100 séquences) sont tirées aléatoirement. Un jeu de données de 18 100 séquences est soumis à la classification automatique. A l'issue de cette super-classification, 158 familles sont obtenues au total, dont 90 grandes familles. Les petites familles de moins de 20 séquences, soit 1.76\% de ce jeu de données, ne sont pas prises en compte dans l'analyse.\\
+	Pour étudier les mécanismes d'évolution des $\alpha$-satellites, une classification inter-espèce ou "super-classification" (SC) permet de comprendre les différences entre espèces. Pour chaque espèce, 100 séquences par grande famille (> 100 séquences) sont tirées aléatoirement. Un jeu de données de 18 100 séquences est soumis à la classification automatique. A l'issue de cette super-classification, 158 familles sont obtenues au total, dont 90 grandes familles. Les petites familles de moins de 20 séquences, soit 1.76\% de ce jeu de données, ne sont pas prises en compte dans l'analyse.
+	
 	\subsubsection{Répartition des super-familles}
-	Parmi les super-familles (SF), 38 ont une taille comprise entre 100 et 20 compris, et trois familles ont une taille strictement supérieure à 800 séquences. Seule une SF \textit{a priori} est commune aux quatre espèces. Elle rassemble 6 familles parmi les 10 familles classées C2 de \textit{C. solatus} et les deux familles également classées C2 de \textit{C. pogonias}, ainsi que deux familles du \textit{M. fascicularis} et une famille du \textit{C. sabaeus}. Une partie de la famille annotée C2 serait donc commune aux quatre espèces.\\
-	Une SF est partagée entre le \textit{C. pogonias}, le \textit{C. sabaeus} et le \textit{M. fascicularis}. Cette SF regroupe des familles ayant le motif pK$\beta$ et qui correspondrait à la famille C3 commune au \textit{C. pogonias} et au \textit{C. solatus}. Cela signifierait que la famille C3 serait commune à ces quatre espèces également.\\
-	Certaines SF sont spécifiques aux espèces. Au sein des 8 SF spécifiques du \textit{C. pogonias}, seule l'une d'entre elles regroupe deux familles, le reste étant composé d'une famille. Elles correspondraient aux familles C5, une petite partie de C6 et essentiellement à C1. Les trois SF spécifiques de \textit{C. solatus} seraient équivalentes aux familles C2. Le \textit{C. sabaeus} en a 3 et le \textit{M. fascicularis} 27.\\
+	Parmi les super-familles (SF), 38 ont une taille comprise entre 100 et 20 compris, et trois familles ont une taille strictement supérieure à 800 séquences. Seule une SF \textit{a priori} est commune aux quatre espèces. Elle rassemble 6 familles parmi les 10 familles classées C2 de \textit{C. solatus} et les deux familles également classées C2 de \textit{C. pogonias}, ainsi que deux familles du \textit{M. fascicularis} et une famille du \textit{C. sabaeus}. Une partie de la famille annotée C2 serait donc commune aux quatre espèces.
+	
+	Une SF est partagée entre le \textit{C. pogonias}, le \textit{C. sabaeus} et le \textit{M. fascicularis}. Cette SF regroupe des familles ayant le motif pK$\beta$ et qui correspondrait à la famille C3 commune au \textit{C. pogonias} et au \textit{C. solatus}. Cela signifierait que la famille C3 serait commune à ces quatre espèces également.
+	
+	Certaines SF sont spécifiques aux espèces. Au sein des 8 SF spécifiques du \textit{C. pogonias}, seule l'une d'entre elles regroupe deux familles, le reste étant composé d'une famille. Elles correspondraient aux familles C5, une petite partie de C6 et essentiellement à C1. Les trois SF spécifiques de \textit{C. solatus} seraient équivalentes aux familles C2. Le \textit{C. sabaeus} en a 3 et le \textit{M. fascicularis} 27.
+	
 	Le \textit{C. sabaeus} et le \textit{M. fascicularis} partagent 38 SF, soit 42\% des grandes SF (> 20 séquences), dont la plus grande faisant une taille de 1194 séquences. Une seule SF est uniquement commune à \textit{C. solatus} et \textit{C. pogonias} et elle regroupe les deux plus grandes familles qui seraient du C1.
+	
 	\subsubsection{Une mosaïque de familles C2}
 			\begin{figure}
 			\center	
@@ -296,30 +308,39 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 		\textbf{A.} & \includegraphics[scale=0.30]{img/tree_C2_pogonias_solatus.png} & \textbf{B.} & \includegraphics[scale=0.30]{img/tree_C2_all_species.png} \\
 	\end{tabular}
 	\caption{\textbf{Phylogénie des différentes familles qui correspondraient à la famille C2:}
-	\textbf{A.}\textit{C. solatus} (tons verts) et \textit{C. pogonias} (tons orange) \textbf{B.} A ces deux espèces sont rajoutés des familles du \textit{M. fascicularis} (tons bleus) et \textit{C. sabeus} (rose).	 
-	\label{tree_C2}
-		} 
+	\textbf{A.}\textit{C. solatus} (tons verts) et \textit{C. pogonias} (tons orange) \textbf{B.} Des familles du \textit{M. fascicularis} (tons bleus) et \textit{C. sabeus} (rose) sont rajoutées.	 
+	\label{tree_C2}} 
 \end{figure}
-		La famille C2 fait l'objet d'une séparation en plusieurs familles intéressante. Pour vérifier les résultats de cette SC, 30 séquences de chacune des familles C2 de \textit{C. solatus} et \textit{C. pogonias} sont tirées aléatoirement et un arbre est construit pour voir si cette division est retrouvée , puis un autre arbre avec les familles des deux autres espèces supposés de la famille C2 est rajouté au jeu de données précédent construit.\\
-		Une partie de ces familles est spécifique au \textit{C. solatus}, tandis que les familles restantes sont communes aux quatre espèces selon la classification. Dans la phylogénie, les SF 27, 9 et 26 sont bien retrouvées. Cependant la SF 2 regroupe trop de familles, sans faire de distinction (Figure \ref{tree_C2} A). Les familles présumées C2 des deux autres espèces se mélangent plus spécifiquement avec la famille 51 de \textit{C. solatus}.							
+
+		La famille C2 fait l'objet d'une séparation en plusieurs familles intéressantes. Pour vérifier les résultats de cette SC, 30 séquences de chacune des familles annotées C2 de \textit{C. solatus} et \textit{C. pogonias} sont tirées aléatoirement et un arbre est construit pour voir si cette division est retrouvée. Un autre arbre,  avec les familles des deux autres espèces supposées de la famille C2,  est construit.
+		
+		Une partie de ces familles est spécifique au \textit{C. solatus}, tandis que les familles restantes sont communes aux quatre espèces selon la classification. Dans la phylogénie, les SF 27, 9 et 26 sont bien retrouvées. Cependant la SF 2 regroupe trop de familles, sans faire de distinction (Figure \ref{tree_C2} A). Les familles présumées C2 des deux autres espèces se mélangent plus spécifiquement avec la famille 51 de \textit{C. solatus}.
+						
 	\subsubsection{Origine du motif pK$\beta$}
-		\begin{figure}	
+	
+	\begin{figure}	
 			\centering
 				\includegraphics[scale=0.4, angle =90]{img/pkb_tree.png}				
-				\caption{\textbf{Abre des super-familles pK$\beta$:} La super-famille 106 est en rouge, 115 en vert, 20 en bleu et 21 en jaunes.
+				\caption{\textbf{Arbre des super-familles pK$\beta$:} La super-famille 106 est en rouge, 115 en vert, 20 en bleu et 21 en jaunes.
 	\label{fig:pkb_tree}} 
-\end{figure}
+	\end{figure}
 
+	Pour poursuivre l'étude sur les familles communes entre espèces, le regroupement des familles $\alpha$-satellites ayant  le motif pK$\beta$ ou "familles pK$\beta$" attirent l'attention. D'abord sont analysées les familles qui ont le motif à plus de 75\%. Elles représentent au mieux les familles pK$\beta$. Les familles qui expriment moins le motif sont analysées par la suite, pour voir si malgré la faible présence du motif, elles se rassemblent en une ou plusieurs super-familles.
+	
+	Le premier groupe de familles pK$\beta$ est constitué de la famille C3 de \textit{C. pogonias}, la famille 3 de \textit{C. sabeus}, et les familles 1 et 17 de \textit{M. fascicularis} qui expriment le motif à respectivement 80\%, 79\%, 94\% et 80\%. Ces familles s'assemblent en deux super-familles. La SF 21 est spécifique au macaque, regroupant la famille 1. 
+	
+	La SF 20 regroupe les familles C3 de \textit{C. pogonias}, la famille 3 de \textit{C. sabeus} et la famille 17 de \textit{M. fascicularis}. Toutes ces espèces ont donc une "famille C3" en commun, peut-être sous forme de dimère C2-C3. Le deuxième groupe de famille pK$\beta$ est formé de la famille 27 de  \textit{C.sabeus} et les familles  47 et 294 du \textit{M. fascicularis} qui ont le motif à 27\%, 16\% et 41\% respectivement. 
+	
+	La SF 106, regroupant la famille 294, est spécifique de \textit{M. fascicularis}. Les deux familles restantes, qui ont un faible pourcentage du motif, se regroupent pour former la SF 115. De plus, ces SF sont uniquement constituées de familles pK$\beta$ et ne se mélangent pas aux autres familles.
+	
+	Un arbre composé de toutes les SF pK$\beta$ est construit pour voir comment elles s'assemblent. Le jeu de données est construit à partir de 50 séquences par famille pK$\beta$ par espèce tirées alétoirement (Figure \ref{fig:pkb_tree}) et contiennent la famille C3 de \textit{C. solatus}, dont la famille était trop petite pour être prise en compte. Comme les autres "familles C3", elle se range dans la SF 20. 
 
-
-
-
-
-	Pour poursuivre l'étude sur les familles communes entre espèces, le regroupement des familles $\alpha$-satellites ayant  le motif pK$\beta$ ou "familles pK$\beta$" attire l'attention. D'abord sont analysées les familles qui ont le motif à plus de 75\%. Elles représentent au mieux les familles pK$\beta$. Les familles qui expriment moins le motif sont analysées par la suite, pour voir si malgré la faible présence du motif, elles se rassemblent en une ou plusieurs super-familles.
-	Le premier groupe de familles pK$\beta$ est constitué de la famille C3 de \textit{C. pogonias}, la famille 3 de \textit{C. sabeus}, et les familles 1 et 17 de \textit{M. fascicularis} qui expriment le motif à respectivement 80\%, 79\%, 94\% et 80\%. Ces familles s'assemblent en deux super-familles. La super-famille 21 est spécifique au macaque, regroupant la famille 1. La super-famille 20 regroupe les familles C3 de \textit{C. pogonias}, la famille 3 de \textit{C. sabeus} et la famille 17 de \textit{M. fascicularis}. Toutes ces espèces ont donc une "famille C3" en commun, peut-être sous forme de dimère C2-C3. Le deuxième groupe de famille pK$\beta$ est formé de la famille 27 de  \textit{C.sabeus} et les familles  47 et 294 du \textit{M. fascicularis} qui ont le motif à 27\%, 16\% et 41\% respectivement. La super-famille 106, regroupant la famille 294, est spécifique de \textit{M. fascicularis}. Les deux familles restantes, qui ont un faible pourcentage du motif, se regroupent pour former la super-famille 115. De plus, ces super-familles sont uniquement consitutées de familles pK$\beta$ et ne se mélangent pas aux autres familles.
-	Un arbre composé de toutes les super-familles pK$\beta$ est construit pour voir comment elles s'assemblent. Le jeu de données est construit à partir de 50 séquences par famille pK$\beta$ par espèce tirées alétoirement (Figure \ref{fig:pkb_tree}) et contiennent la famille C3 de \textit{C. solatus}, dont la famille était trop petite pour être prise en compte. Comme les autres "familles C3", elle se range dans la super-famille 20. 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%Discussion%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
+
+	Nombre de famille par espces est tres variable
 
 	Les tailles moyennes des consensus sont de 173 nucléotides pour \textit{C. pogonias}, 173 pour \textit{C. solatus}, 173 pour le \textit{C. sabaeus} et X pour le \textit{M. fascicularis}\\
 	
@@ -328,39 +349,14 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 
 \section{Conclusion}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%Bibliographie%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \strut  ~  \mbox{}  \null
 \newpage
-
 \bibliographystyle{unsrt} \bibliography{biblio} 
-
-%
-%	\makeindex % index général
-%   \newindex{env}{enx}{end}{Environnements}
-%   \newindex{ext}{exx}{exd}{Extensions}
-%   \newindex{cmm}{cmx}{cmd}{Commandes}
-%	\newcommand{\commande}[1]
-%   {\texttt{\textbackslash #1}}
-%	\newcommand{\indexcmm}[1]
-%   {\index[cmm]{#1@\commande{#1}}} % index d'une commande
-% 
-%
-%
-%
-%Une citation\index{citation} hors paragraphe
-%se met dans un environnement
-%\emph{quote}\index[env]{quote}
-%ou \emph{quotation}\index[env]{quotation}
-% 
-%L'extension \emph{array}\index[ext]{array}
-%fournit les commandes
-%\commande{raggedleft}\indexcmm{raggedleft}
-%et \commande{raggedright}\indexcmm{raggedright}.
-% 
-%\printindex % index général
-%\printindex[env]
-%\printindex[ext]
-%\printindex[cmm]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%Résumé & Abstract%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -374,5 +370,3 @@ Votre résumé commence ici...
  Abstract begins here...
    ...
 \end{document}
-%
-%%HELP: http://lataix-sebastien.developpez.com/tutoriels/latex/memoire-de-fin-d-etude/#LII-C
