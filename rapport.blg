@@ -6,47 +6,45 @@ Database file #1: biblio.bib
 Warning--entry type for "Edgar2004" isn't style-file defined
 --line 9 of file biblio.bib
 Warning--I didn't find a database entry for "Guindon2009"
-Warning--empty journal in Cacheux_evolution
-Warning--empty year in Cacheux_evolution
 You've used 15 entries,
             1791 wiz_defined-function locations,
-            558 strings with 6378 characters,
-and the built_in function-call counts, 3607 in all, are:
-= -- 312
-> -- 189
+            562 strings with 6682 characters,
+and the built_in function-call counts, 3826 in all, are:
+= -- 323
+> -- 223
 < -- 0
-+ -- 69
-- -- 54
-* -- 294
-:= -- 594
-add.period$ -- 42
++ -- 80
+- -- 65
+* -- 323
+:= -- 638
+add.period$ -- 43
 call.type$ -- 15
 change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 126
-empty$ -- 334
-format.name$ -- 54
-if$ -- 757
+cite$ -- 15
+duplicate$ -- 127
+empty$ -- 342
+format.name$ -- 65
+if$ -- 799
 int.to.chr$ -- 0
 int.to.str$ -- 15
 missing$ -- 13
-newline$ -- 75
+newline$ -- 76
 num.names$ -- 15
-pop$ -- 32
+pop$ -- 27
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 48
 stack$ -- 0
-substring$ -- 308
-swap$ -- 14
+substring$ -- 326
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 38
+warning$ -- 0
+while$ -- 39
 width$ -- 17
-write$ -- 157
-(There were 4 warnings)
+write$ -- 161
+(There were 2 warnings)
