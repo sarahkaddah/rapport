@@ -1,31 +1,24 @@
 \select@language {french}
 \contentsline {section}{Remerciements}{1}
-\contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {subsection}{\numberline {1.1}Le centrom\IeC {\`e}re}{2}
-\contentsline {subsection}{\numberline {1.2}L'ADN $\alpha $-satellites}{2}
-\contentsline {subsection}{\numberline {1.3}Le sujet de stage}{3}
-\contentsline {section}{\numberline {2}Mat\IeC {\'e}riel et m\IeC {\'e}thode}{4}
-\contentsline {subsection}{\numberline {2.1}Les esp\IeC {\`e}ces \IeC {\'e}tudi\IeC {\'e}es}{4}
-\contentsline {subsection}{\numberline {2.2}M\IeC {\'e}thode de classification}{5}
-\contentsline {subsubsection}{\numberline {2.2.1}Principe}{5}
-\contentsline {subsubsection}{\numberline {2.2.2}R\IeC {\'e}partition it\IeC {\'e}rative}{5}
-\contentsline {subsubsection}{\numberline {2.2.3}Double-validation d'un sous-groupe}{6}
-\contentsline {subsection}{\numberline {2.3}Analyse des s\IeC {\'e}quences}{6}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{7}
-\contentsline {subsection}{\numberline {3.1}Caract\IeC {\'e}risation intrasp\IeC {\'e}cifique des familles}{7}
-\contentsline {subsubsection}{\numberline {3.1.1}Identification des familles}{7}
-\contentsline {subsubsection}{\numberline {3.1.2}Motifs potentiellement fonctionnels}{11}
-\contentsline {subsubsection}{\numberline {3.1.3}Similarit\IeC {\'e} entre familles}{12}
-\contentsline {subsection}{\numberline {3.2}Comparaison inter-esp\IeC {\`e}ce}{13}
-\contentsline {subsubsection}{\numberline {3.2.1}R\IeC {\'e}partition des super-familles}{14}
-\contentsline {subsubsection}{\numberline {3.2.2}Un groupe C2 h\IeC {\'e}t\IeC {\'e}rog\IeC {\`e}ne}{15}
-\contentsline {subsubsection}{\numberline {3.2.3}Origine du motif pK$\beta $}{15}
-\contentsline {section}{\numberline {4}Discussion}{17}
-\contentsline {subsection}{\numberline {4.1}Comparaison du nombre de familles entre esp\IeC {\`e}ces}{17}
-\contentsline {subsection}{\numberline {4.2}Les informations manquantes}{17}
-\contentsline {subsection}{\numberline {4.3}Familles d\IeC {\'e}tect\IeC {\'e}es ou non}{17}
-\contentsline {subsection}{\numberline {4.4}Motifs les mieux conserv\IeC {\'e}s}{17}
-\contentsline {subsection}{\numberline {4.5}Age des s\IeC {\'e}quences}{18}
-\contentsline {subsection}{\numberline {4.6}Ordre d'apparition des s\IeC {\'e}quences}{18}
-\contentsline {subsection}{\numberline {4.7}Reproductibilit\IeC {\'e}}{18}
-\contentsline {section}{\numberline {5}Conclusion}{19}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Le centrom\IeC {\`e}re}{1}
+\contentsline {subsection}{\numberline {1.2}L'ADN $\alpha $-satellite}{1}
+\contentsline {subsection}{\numberline {1.3}Le sujet de stage}{2}
+\contentsline {section}{\numberline {2}Mat\IeC {\'e}riel et m\IeC {\'e}thode}{3}
+\contentsline {subsection}{\numberline {2.1}Les esp\IeC {\`e}ces \IeC {\'e}tudi\IeC {\'e}es}{3}
+\contentsline {subsection}{\numberline {2.2}M\IeC {\'e}thode de classification}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Principe}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}R\IeC {\'e}partition it\IeC {\'e}rative}{4}
+\contentsline {subsubsection}{\numberline {2.2.3}Double-validation d'un sous-groupe}{5}
+\contentsline {subsection}{\numberline {2.3}Analyse des s\IeC {\'e}quences}{5}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{6}
+\contentsline {subsection}{\numberline {3.1}Caract\IeC {\'e}risation intrasp\IeC {\'e}cifique des familles}{6}
+\contentsline {subsubsection}{\numberline {3.1.1}Identification des familles}{6}
+\contentsline {subsubsection}{\numberline {3.1.2}Motifs potentiellement fonctionnels}{10}
+\contentsline {subsubsection}{\numberline {3.1.3}Similarit\IeC {\'e} entre familles}{11}
+\contentsline {subsection}{\numberline {3.2}Comparaison inter-esp\IeC {\`e}ce}{12}
+\contentsline {subsubsection}{\numberline {3.2.1}R\IeC {\'e}partition des super-familles}{13}
+\contentsline {subsubsection}{\numberline {3.2.2}Un groupe C2 h\IeC {\'e}t\IeC {\'e}rog\IeC {\`e}ne}{14}
+\contentsline {subsubsection}{\numberline {3.2.3}Origine du motif pK$\beta $}{14}
+\contentsline {section}{\numberline {4}Discussion}{15}
+\contentsline {section}{\numberline {5}Conclusion}{17}
