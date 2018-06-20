@@ -154,9 +154,6 @@ Afin d'évaluer cette méthode, je  vais l'appliquer aux jeux de données déjà
 		\label{fig:arbre_presentation}}
 	\end{figure}
 
-%Les données de \textit{C. solatus} et \textit{C. pogonias} sont issues d'un séquençage ciblé de monomères digérés par une enzyme de restriction (XmnI, HindIII) et séquencés en Ion Torrent \cite{Benjak2015}. Une recherche d'$\alpha$-satellites chez d'autres primates, issus du séquençage à haut débit, a été réalisée sur Genbank. Les monomères d'$\alpha$-satellites faisant environ 171pb,  seuls les projets impliquant des reads relativement longs ont été considérés (Illumina en single-end, L454, ...).
-%Les critères de sélection dépendent de la disponibilité des séquences de qualité parmi 10 espèces. Afin de permettre de comparer les données avec les deux cercopithèques, j'ai choisi deux espèces proches parmi les 10 espèces pour lesquelles des données sont disponibles (Figure \ref{fig:arbre_presentation}), \textit{Macaca fascicularis} et \textit{Chlorocebus sabaeus}. Tous les $\alpha$-satellites sont alignés (même phase) sur les monomères de \textit{C. solatus} et \textit{C. pogonias} étudiés précédemment.
-
 Les deux espèces \textit{C. solatus} et \textit{C. pogonias}, dont les jeux de données sont déjà publiés, sont d'abord choisies. Ces données sont issues d'un séquençage ciblé de monomères digérés par une enzyme de restriction (XmnI, HindIII) et séquencés en Ion Torrent \cite{Benjak2015}. 
 
 Ensuite, une recherche d'$\alpha$-satellites chez d'autres primates, issus du séquençage à haut débit, a été réalisée sur Genbank. Afin de permettre de comparer les données avec les deux Cercopithèques, j'ai choisi deux espèces proches parmi 10 espèces selon la disponibilité des données et la qualité des séquences (Figure \ref{fig:arbre_presentation}), \textit{Macaca fascicularis} et \textit{Chlorocebus sabaeus}.
@@ -207,7 +204,7 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
   			\textbf{Espèces} & \textbf{Nombre } & \textbf{Nombre de } & \textbf{Nombre de familles} & \textbf{\%  de séquences dans les}\\
   			 & \textbf{d'$\alpha$-satellites } & \textbf{familles au total} & \textbf{ > 100 séquences} & \textbf{familles > 100 séquences}\\
   		    \hline
-   			\textit{C. solatus} & 105 529 & 564 & 12 & 96.03  \\
+   			\textit{C. solatus} & 105 529 & 564 & 11 & 96.03  \\
    			\hline
     		\textit{C. pogonias} & 112 902 & 132 & 13 & 98.71\\
    			\hline
@@ -242,9 +239,9 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 	    	\hline
 			\textbf{Classification publiée} &  \textbf{\textit{C. solatus}}  & \textbf{\textit{C. pogonias}}\\
 			\hline
-			C1 (> 5 000 séquences) &  1  & 10\\
+			C1 (> 5 000 séquences) &  1  & 9\\
 			\hline
-			C2 (> 82 000 séquences) & 11  & 1 \\
+			C2 (> 82 000 séquences) & 10  & 2 \\
 			\hline
 			C3 (<170 séquences) & 1* & 1 \\
 			\hline
@@ -258,7 +255,7 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 		\label{tab_count_fam}
 	\end{table}
 		
-	Bien que le nombre de grandes familles soit relativement proche entre ces deux espèces (pour rappel 12 et 13), les résultats diffèrent significativement (Table \ref{tab_count_fam}). Chez \textit{C. solatus}, les classes C1 à C4 sont retrouvées: 11 familles correspondent à C2, une famille correspond à C1 et les familles C3 et C4, ne comportant que 109 et 112 séquences dans le jeu de données, sont retrouvées dans des petites familles d'environ 80 séquences chacune. Chez \textit{C. pogonias}, contrairement à C6, les classes C1, C2, C3, C4 et C5 sont retrouvées. C1 est répartie en 9 familles, alors que les classes C2, C3 et C5 sont regroupées dans des familles individuelles, et la classe C4 est également retrouvée sous la forme d'une petite famille de 86 séquences. La classe C2 chez le \textit{C. solatus} et la classe C1 chez \textit{C. pogonias} aurait dû former une famille chacune. Ces classes sont donc sur-clusterisées. Dans la suite de l'analyse, la pertinence de cette sur-clusterisation est examinée (plus particulièrement pour les séquences C2).
+	Bien que le nombre de grandes familles soit relativement proche entre ces deux espèces (pour rappel 11 et 13), les résultats diffèrent significativement (Table \ref{tab_count_fam}). Chez \textit{C. solatus}, les classes C1 à C4 sont retrouvées: 11 familles correspondent à C2, une famille correspond à C1 et les familles C3 et C4, ne comportant que 109 et 112 séquences dans le jeu de données, sont retrouvées dans des petites familles d'environ 80 séquences chacune. Chez \textit{C. pogonias}, contrairement à C6, les classes C1, C2, C3, C4 et C5 sont retrouvées. C1 est répartie en 9 familles, alors que les classes C2, C3 et C5 sont regroupées dans des familles individuelles, et la classe C4 est également retrouvée sous la forme d'une petite famille de 86 séquences. La classe C2 chez le \textit{C. solatus} et la classe C1 chez \textit{C. pogonias} aurait dû former une famille chacune. Ces classes sont donc sur-clusterisées. Dans la suite de l'analyse, la pertinence de cette sur-clusterisation est examinée (plus particulièrement pour les séquences C2).
 	
 		\begin{figure}	
 			\begin{tabular}{cc|cc}
@@ -323,60 +320,60 @@ Les consensus sont obtenus avec des scripts développés par l'équipe. Les moti
 %%%%%%%%%%%%%%%%%%%%%%Résultats 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 	\subsection{Comparaison inter-espèce}
-	Pour comparer les classifications obtenues au sein de chaque espèce, une super-classification a été effectuée afin de déterminer l'existence de super-familles (SF). Pour cela, l'algorithme de classification a été utilisé sur un jeu de donné composé de 100 séquences par grande famille (> 100 séquences) tirées aléatoirement pour chaque espèce. Un jeu de données de 18 100 séquences est soumis à la classification automatique. A l'issue de cette super-classification, 158 familles sont obtenues au total, dont 90 grandes familles (Figure \ref{distribution_SF}). Les petites familles de moins de 20 séquences, soit 1.76\% de ce jeu de données, ne sont pas prises en compte dans l'analyse. Après avoir présenté quelques caractéristiques de cette analyse, je présenterai les résultats concernant deux questions: l'origine du site de fixation de pK$\beta$ et la divergence des séquences appartenant à C2.
+	Pour comparer les classifications obtenues au sein de chaque espèce, une super-classification a été effectuée afin de déterminer l'existence de super-familles (SF). Pour cela, l'algorithme de classification a été utilisé sur un jeu de données composé de 100 séquences par grande famille (> 100 séquences) tirées aléatoirement pour chaque espèce. Un jeu de données de 18 100 séquences est ainsi créé à partir des 181 familles au total, puis soumis à la classification automatique. A l'issue de cette super-classification, 158 familles sont obtenues, dont 90 grandes familles (Figure \ref{distribution_SF}). Les petites familles de moins de 20 séquences, soit 1.76\% de ce jeu de données, ne sont pas prises en compte dans l'analyse. Après avoir présenté quelques caractéristiques de cette analyse, je présenterai les résultats concernant l'origine du site de fixation de pK$\beta$ et la divergence des séquences appartenant à C2.
 	
 	\begin{figure}	
 	\center
 	\includegraphics[scale=0.3]{img/distribution_SF.png}
-	\caption{\textbf{Distribution des super-familles:} Histogramme du nombre de famille observé en fonction de la taille. 
+	\caption{\textbf{Distribution des super-familles:} Histogramme du nombre de familles observées en fonction de la taille. 
 	\label{distribution_SF}
 		} 
 	\end{figure}
 	
 	\subsubsection{Répartition des super-familles}
-	Parmi les super-familles, seulement une \textit{a priori} est commune aux quatre espèces. Elle rassemble 6 familles parmi les 10 familles classées C2 de \textit{C. solatus} et les deux familles également classées C2 de \textit{C. pogonias}, ainsi que deux familles du \textit{M. fascicularis} et une famille du \textit{C. sabaeus}. Une partie de la famille annotée C2 serait donc commune aux quatre espèces.
+	Parmi les super-familles, seulement une \textit{a priori} est commune aux quatre espèces. Elle rassemble 6 familles parmi les 10 familles classées C2 de \textit{C. solatus} et les deux familles également classées C2 de \textit{C. pogonias}, ainsi que deux familles du \textit{M. fascicularis} et une famille du \textit{C. sabaeus}. La classe C2, du moins une partie, serait donc commune aux quatre espèces.
 	
-	Une super-famille est partagée entre le \textit{C. pogonias}, le \textit{C. sabaeus} et le \textit{M. fascicularis}. Cette super-famille regroupe des familles ayant le motif pK$\beta$ et qui correspondrait à la famille C3 commune au \textit{C. pogonias} et au \textit{C. solatus}. Cette famille de \textit{C. solatus} est absente car elle ne fait que 80 séquences. Etant une famille de moins de 100 séquence, elle n'a pas été retenue pour l'analyse. Cela signifierait que la famille C3 serait commune à ces quatre espèces également.
+	Une super-famille est partagée entre  \textit{C. pogonias},  \textit{C. sabaeus} et  \textit{M. fascicularis}. Cette super-famille regroupe des familles ayant le motif pK$\beta$ uniquement et correspondrait à la classe C3 identifiée chez \textit{C. pogonias} et \textit{C. solatus}. Donc cette famille serait en fait commune aux 4 espèces également. Pour rappel, les séquences de la  classe C3 de \textit{C. solatus} n'ont pas été prises en compte à cause de la taille de la famille (< 100 séquences).
 	
-	Certaines super-familles sont spécifiques aux espèces. Au sein des 8 super-familles spécifiques du \textit{C. pogonias}, seule l'une d'entre elles regroupe deux familles, le reste étant composé d'une famille. Elles correspondraient aux familles C5, une petite partie de C6 et essentiellement à C1. Les trois super-familles spécifiques de \textit{C. solatus} seraient équivalentes aux familles C2. Le \textit{C. sabaeus} en a 3 et le \textit{M. fascicularis} 27.
+	Certaines super-familles sont spécifiques aux espèces. Au sein des 8 super-familles spécifiques de \textit{C. pogonias}, seule l'une d'entre elles regroupe deux familles, le reste étant composé d'une famille. Ces super-familles correspondraient à 5 familles C1, une famille C5 et une petite partie de C6. Les trois super-familles spécifiques de \textit{C. solatus} seraient équivalentes aux familles C2.  \textit{C. sabaeus} en aurait 3 et  \textit{M. fascicularis} 35.
 	
-	Le \textit{C. sabaeus} et le \textit{M. fascicularis} partagent 38 super-familles, soit 42\% des grandes super-familles (> 20 séquences), dont la plus grande faisant une taille de 1194 séquences. Une seule super-famille est uniquement commune à \textit{C. solatus} et \textit{C. pogonias} et elle regroupe les deux plus grandes familles qui seraient du C1.
+	\textit{C. sabaeus} et \textit{M. fascicularis} partagent 38 super-familles, soit 42\% des grandes super-familles (> 20 séquences), dont la plus grande fait une taille de 1194 séquences. Une seule super-famille est uniquement commune à \textit{C. solatus} et \textit{C. pogonias} et elle regroupe les deux plus grandes familles qui correspondraient à du C1.
 	
 	\subsubsection{Un groupe C2 hétérogène}
 			\begin{figure}
 			\center	
-			\begin{tabular}{cccc}
-		\textbf{A.} & \includegraphics[scale=0.30]{img/tree_C2_pogonias_solatus.png} & \textbf{B.} & \includegraphics[scale=0.30]{img/tree_C2_all_species.png} \\
+			\begin{tabular}{cc}
+ \includegraphics[scale=0.32]{img/tree_C2_pogonias_solatus.png}  & \includegraphics[scale=0.32]{img/tree_C2_all_species.png} \\
 	\end{tabular}
 	\caption{\textbf{Phylogénie des différentes familles qui correspondraient à la famille C2:}
-	\textbf{A.}\textit{C. solatus} (tons verts) et \textit{C. pogonias} (tons orange) \textbf{B.} Des familles du \textit{M. fascicularis} (tons bleus) et \textit{C. sabeus} (rose) sont rajoutées.	 
+	Les abbréviations: F = famille, SF = super-famille, Cso = \textit{C. solatus}, Cp = \textit{C. pogonias}, Mf = \textit{M. fascicularis}, Csa = \textit{C. sabaeus}. Les super-familles sont écrites d'une même couleur. \textbf{A.} \textit{C. solatus} (tons verts) et \textit{C. pogonias} (tons orange) \textbf{B.} Des familles du \textit{M. fascicularis} (tons bleus) et \textit{C. sabeus} (rose) sont rajoutées.	 
 	\label{tree_C2}} 
 \end{figure}
 
-		La famille C2 fait l'objet d'une séparation en plusieurs familles intéressantes. Pour vérifier les résultats de cette super-classification, 30 séquences de chacune des familles annotées C2 de \textit{C. solatus} et \textit{C. pogonias} sont tirées aléatoirement et un arbre est construit pour voir si cette division est retrouvée. Un autre arbre,  avec les familles des deux autres espèces supposées de la famille C2,  est construit.
+		La classe C2 est divisée en 10 familles chez \textit{C. solatus} et en 2 familles chez \textit{C. pogonias}. Or dans les résultats empiriques publiés, les séquences C2 auraient dû former une seule famille chez chacune de ces deux espèces. La classe C2 est donc sur-clusterisée. Ensuite, certaines de ces familles se sont regroupées pour former une super-famille, notamment avec une famille de \textit{C. sabaeus} et \textit{M. fascicularis}.
 		
-		Une partie de ces familles est spécifique au \textit{C. solatus}, tandis que les familles restantes sont communes aux quatre espèces selon la classification. Dans la phylogénie, les super-familles 27, 9 et 26 sont bien retrouvées. Cependant la super-famille 2 regroupe trop de familles, sans faire de distinction (Figure \ref{tree_C2} A). Les familles présumées C2 des deux autres espèces se mélangent plus spécifiquement avec la famille 51 de \textit{C. solatus}.
+		Pour vérifier les résultats de cette super-classification, 30 séquences aléatoires de chacune des familles qui correspondraient à  C2 sont utilisées pour construire deux arbres phylogénétiques. Le premier contient uniquement les familles de \textit{C. solatus} représentées en tons verts et celles de \textit{C. pogonias} en tons orange (Figure \ref{tree_C2} A). Le second contient les familles supplémentaires supposées de la classe C2 de \textit{C. sabaeus} en rose et \textit{M. fascicularis} en tons bleus (Figure \ref{tree_C2} B).
+		
+		Dans le premier arbre (Figure \ref{tree_C2} A), chaque ton vert forme un groupe. Donc les familles de \textit{C. solatus} forment bien des familles distinctes. Seule une famille semble se mélanger aux autres. Deux de ces familles contiennent des tons orange. Donc \textit{C. solatus} et \textit{C. pogonias} partagent deux familles. Cette sur-clusterisation aurait donc du sens. Par contre, la super-famille regroupe trop de familles sans faire de distinction. Dans le second arbre (Figure \ref{tree_C2} B), les séquences du \textit{M. fascicularis} et \textit{C. sabaeus} vont spécifiquement se mettre avec une famille de \textit{C. solatus}.	
+
+		Pour conclure sur l'hétérogénéité de  C2, une partie de ces familles est spécifique à \textit{C. solatus}, deux sont communes à \textit{C. solatus} et \textit{C. pogonias}, une famille de \textit{C. solatus} est commune aux quatre espèces selon la classification. Cependant la super-classification ne sépare pas aussi bien les familles.
 						
 	\subsubsection{Origine du motif pK$\beta$}
 	
 	\begin{figure}	
 			\centering
 				\includegraphics[scale=0.4]{img/pkb_tree.png}				
-				\caption{\textbf{Phylogénie des super-familles pK$\beta$}
+				\caption{\textbf{Phylogénie des super-familles pK$\beta$:} Les abbréviations: SF = super-famille, Cp = \textit{C. pogonias}, Cso = \textit{C. solatus}, Csa = \textit{C. sabaeus}, Mf = \textit{M. fascicularis}. Une couleur correspond à une super-famille. 
 	\label{fig:pkb_tree}} 
 	\end{figure}
 
 	Pour poursuivre l'étude sur les familles communes entre espèces, le regroupement des familles $\alpha$-satellites ayant  le motif pK$\beta$ ou "familles pK$\beta$" attirent l'attention. 
 	
-	La première super-famille pK$\beta$ est constituée de la famille C3 de \textit{C. pogonias}, la famille 3 de \textit{C. sabeus}, et la famille 8 de \textit{M. fascicularis}. La super-famille 21 est spécifique au macaque, regroupant la famille 1. Toutes ces espèces ont donc une "famille C3" en commun, peut-être sous forme de dimère C2-C3.
-	
-	Le \textit{M. fascicularis} et \textit{C.sabeus} ont deux super-familles pK$\beta$ en commun. Les familles constituant ces super-familles ont un pourcentage du motif relativement faible, pourtant elles sont tout de même rassemblées. 
-	
-	Le \textit{C.sabeus} et le \textit{M. fascicularis} ont respectivement chacun une super-famille pK$\beta$ spécifique. La première super-famille a le motif à 27\% et la deuxième à 50\%.
+	La première super-famille pK$\beta$ regroupe une famille de chacune des espèces. Ces familles pK$\beta$ possèdent le motif à 80\%. De plus cette famille correspond à la classe C3. Donc toutes ces espèces auraient une "famille C3" en commun. Le \textit{M. fascicularis} et \textit{C.sabeus} ont deux super-familles pK$\beta$ en commun. Les familles constituant ces super-familles ont un pourcentage de présence du motif relativement faible, pourtant elles sont tout de même rassemblées.  \textit{C.sabeus} et \textit{M. fascicularis} ont respectivement une et deux super-familles pK$\beta$ spécifiques. La première super-famille a le motif à 27\% et la deuxième à 50\%.
 		
-	Un arbre composé de toutes les super-familles pK$\beta$ est construit pour voir comment elles s'assemblent. Le jeu de données est construit à partir de 50 séquences par famille pK$\beta$ par espèce tirées aléatoirement (Figure \ref{fig:pkb_tree}). Elles se rassemblent exactement comme dans les super-familles. La méthode de classification retrouve bien les familles pK$\beta$ et elle les classe correctement.
+	Un arbre composé de toutes les familles pK$\beta$ est construit pour voir si les super-familles sont retrouvées phylogénétiquement. Le jeu de données est construit à partir de 50 séquences aléatoires par famille pK$\beta$ par espèce (Figure \ref{fig:pkb_tree}). Une couleur représente une super-famille. Chaque couleur se regroupe, donc les super-familles sont retrouvées. Les séquences se rassemblent exactement comme dans les super-familles.
 	
-	Pour conclure, les familles pK$\beta$ sont des familles partagées entre espèces pour certaines, et spécifique à une espèce pour d'autres.
+	Pour conclure, les familles pK$\beta$ sont des familles partagées entre espèces pour certaines, et spécifique à une espèce pour d'autres. La méthode de classification retrouve bien les familles pK$\beta$ (intra-spécifique) et les super-familles pK$\beta$ inter-spécifique).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%Discussion%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

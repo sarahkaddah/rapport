@@ -20,5 +20,5 @@
 \contentsline {subsubsection}{\numberline {3.2.1}R\IeC {\'e}partition des super-familles}{13}
 \contentsline {subsubsection}{\numberline {3.2.2}Un groupe C2 h\IeC {\'e}t\IeC {\'e}rog\IeC {\`e}ne}{14}
 \contentsline {subsubsection}{\numberline {3.2.3}Origine du motif pK$\beta $}{15}
-\contentsline {section}{\numberline {4}Discussion}{16}
+\contentsline {section}{\numberline {4}Discussion}{17}
 \contentsline {section}{\numberline {5}Conclusion}{18}
