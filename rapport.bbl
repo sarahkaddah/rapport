@@ -22,12 +22,18 @@ S~Henikoff, K~Ahmad, and H~S Malik.
 \newblock The centromere paradox: stable inheritance with rapidly evolving dna.
 \newblock {\em Science (New York, N.Y.)}, 293:1098--1102, August 2001.
 
-\bibitem{Cellamare2009}
-A~Cellamare, C~R Catacchio, C~Alkan, G~Giannuzzi, F~Antonacci, M~F Cardone,
-  G~Della~Valle, M~Malig, M~Rocchi, E~E Eichler, and M~Ventura.
-\newblock New insights into centromere organization and evolution from the
-  white-cheeked gibbon and marmoset.
-\newblock {\em Molecular biology and evolution}, 26:1889--1900, August 2009.
+\bibitem{Giannuzzi2012}
+Giuliana Giannuzzi, Claudia~Rita Catacchio, and Mario Ventura.
+\newblock Centromere evolution: Digging into mammalian primary constriction.
+\newblock In {\em Current Frontiers and Perspectives in Cell Biology}. InTech,
+  2012.
+
+\bibitem{Shepelev2009}
+Valery~A Shepelev, Alexander~A Alexandrov, Yuri~B Yurov, and Ivan~A Alexandrov.
+\newblock The evolutionary origin of man can be traced in the layers of defunct
+  ancestral alpha satellites flanking the active centromeres of human
+  chromosomes.
+\newblock {\em PLoS genetics}, 5(9):e1000641, 2009.
 
 \bibitem{Willard1991}
 H~F Willard.
@@ -41,29 +47,31 @@ D~M Kurnit and J~J Maio.
   aethiops.
 \newblock {\em Chromosoma}, 45:387--400, May 1974.
 
-\bibitem{Lee1997}
-C~Lee, R~Wevrick, R~B Fisher, M~A Ferguson-Smith, and C~C Lin.
-\newblock Human centromeric dnas.
-\newblock {\em Human genetics}, 100:291--304, September 1997.
-
 \bibitem{Alexandrov2001}
 I~Alexandrov, A~Kazakov, I~Tumeneva, V~Shepelev, and Y~Yurov.
 \newblock Alpha-satellite dna of primates: old and new families.
 \newblock {\em Chromosoma}, 110:253--266, August 2001.
 
-\bibitem{Shepelev2009}
-Valery~A Shepelev, Alexander~A Alexandrov, Yuri~B Yurov, and Ivan~A Alexandrov.
-\newblock The evolutionary origin of man can be traced in the layers of defunct
-  ancestral alpha satellites flanking the active centromeres of human
-  chromosomes.
-\newblock {\em PLoS genetics}, 5:e1000641, September 2009.
+\bibitem{Catacchio2015}
+CR~Catacchio, R~Ragone, G~Chiatante, and M~Ventura.
+\newblock Organization and evolution of gorilla centromeric dna from old
+  strategies to new approaches.
+\newblock {\em Scientific reports}, 5:14189, 2015.
 
-\bibitem{Romanova1996}
-L~Y Romanova, G~V Deriagin, T~D Mashkova, I~G Tumeneva, A~R Mushegian, L~L
-  Kisselev, and I~A Alexandrov.
-\newblock Evidence for selection in evolution of alpha satellite dna: the
-  central role of cenp-b/pj alpha binding region.
-\newblock {\em Journal of molecular biology}, 261:334--340, August 1996.
+\bibitem{Cacheux2016}
+Lauriane Cacheux, Loïc Ponger, Michèle Gerbault-Seureau, Florence~Anne
+  Richard, and Christophe Escudé.
+\newblock Diversity and distribution of alpha satellite dna in the genome of an
+  old world monkey: Cercopithecus solatus.
+\newblock {\em BMC genomics}, 17:916, November 2016.
+
+\bibitem{Cacheux2018}
+Lauriane Cacheux, Loïc Ponger, Michèle Gerbault-Seureau, François Loll,
+  Delphine Gey, Florence~Anne Richard, and Christophe Escudé.
+\newblock The targeted sequencing of alpha satellite dna in cercopithecus
+  pogonias provides new insight into the diversity and dynamics of centromeric
+  repeats in old world monkeys.
+\newblock {\em Genome biology and evolution}, June 2018.
 
 \bibitem{Springer2012}
 Mark~S Springer, Robert~W Meredith, John Gatesy, Christopher~A Emerling, Jong
@@ -84,8 +92,20 @@ Robert~C. Edgar.
 \newblock Muscle: multiple sequence alignment with high accuracy and high
   throughput, 2004.
 
+\bibitem{Galtier1996}
+N~Galtier, M~Gouy, and C~Gautier.
+\newblock Seaview and phylo\_win: two graphic tools for sequence alignment and
+  molecular phylogeny.
+\newblock {\em Computer applications in the biosciences : CABIOS}, 12:543--548,
+  December 1996.
+
 \bibitem{Rice2000}
 Peter Rice, Ian Longden, and Alan Bleasby.
 \newblock Emboss: the european molecular biology open software suite, 2000.
+
+\bibitem{Rudd2006}
+M~Katharine Rudd, Gregory~A Wray, and Huntington~F Willard.
+\newblock The evolutionary dynamics of alpha-satellite.
+\newblock {\em Genome research}, 16:88--96, January 2006.
 
 \end{thebibliography}

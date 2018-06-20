@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.11)  20 JUN 2018 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2018.1.11)  20 JUN 2018 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,64 +1155,24 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
  [0]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 110.
-
-
-LaTeX Warning: Citation `Cleveland2003' on page 1 undefined on input line 111.
-
-
-LaTeX Warning: Citation `Santaguida2009' on page 1 undefined on input line 111.
-
-
-
-LaTeX Warning: Citation `Sullivan1994' on page 1 undefined on input line 111.
-
-
-LaTeX Warning: Citation `Henikoff2001' on page 1 undefined on input line 113.
-
-
-LaTeX Warning: Citation `Cellamare2009' on page 1 undefined on input line 113.
-
-
-LaTeX Warning: Citation `Willard1991' on page 1 undefined on input line 116.
-
-
-LaTeX Warning: Citation `Kurnit1974' on page 1 undefined on input line 116.
-
-
-LaTeX Warning: Citation `Lee1997' on page 1 undefined on input line 116.
-
-
-LaTeX Warning: Citation `Alexandrov2001' on page 1 undefined on input line 118.
-
-
-
-LaTeX Warning: Citation `Shepelev2009' on page 1 undefined on input line 118.
-
-[1] <img/shepelev.png, id=31, 619.31375pt x 638.385pt>
+ <img/shepelev.png, id=27, 619.31375pt x 638.385pt>
 File: img/shepelev.png Graphic file (type png)
- <use img/shepelev.png>
-Package pdftex.def Info: img/shepelev.png used on input line 122.
+
+<use img/shepelev.png>
+Package pdftex.def Info: img/shepelev.png used on input line 117.
 (pdftex.def)             Requested size: 170.71342pt x 170.71028pt.
 
 
-LaTeX Warning: Citation `Shepelev2009' on page 2 undefined on input line 123.
+LaTeX Warning: Citation `Lee1997' on page 1 undefined on input line 122.
 
-
-LaTeX Warning: Citation `Shepelev2009' on page 2 undefined on input line 123.
-
-<img/AS_organization.png, id=32, 759.83875pt x 224.84pt>
+[1 <./img/shepelev.png>]
+<img/AS_organization.png, id=33, 759.83875pt x 224.84pt>
 File: img/AS_organization.png Graphic file (type png)
 
 <use img/AS_organization.png>
 Package pdftex.def Info: img/AS_organization.png used on input line 130.
 (pdftex.def)             Requested size: 341.43732pt x 99.58517pt.
- [2 <./img/shepelev.png> <./img/AS_organization.png>]
-
-LaTeX Warning: Citation `Cacheux2016' on page 3 undefined on input line 138.
-
-
-LaTeX Warning: Citation `Cacheux2018' on page 3 undefined on input line 138.
-
+ [2 <./img/AS_organization.png>]
 <img/arbre_presentation.png, id=38, 640.3925pt x 485.815pt>
 File: img/arbre_presentation.png Graphic file (type png)
 
@@ -1221,149 +1181,126 @@ Package pdftex.def Info: img/arbre_presentation.png used on input line 152.
 (pdftex.def)             Requested size: 256.07428pt x 184.93777pt.
 
 
-LaTeX Warning: Citation `Springer2012' on page 3 undefined on input line 154.
-
-
-LaTeX Warning: Citation `Benjak2015' on page 3 undefined on input line 157.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3] [4 <./img/arbre_presentation.png>]
-
-LaTeX Warning: Citation `Edgar2004' on page 5 undefined on input line 182.
-
-
-LaTeX Warning: Citation `Galtier1996' on page 5 undefined on input line 182.
-
-
-LaTeX Warning: Citation `Guindon2009' on page 5 undefined on input line 182.
+Overfull \hbox (5.909pt too wide) in paragraph at lines 175--176
+\T1/futs/m/n/12 d'après des études pré-cé-dentes avec des mo-no-mères hu-mains 
+dont la clas-si-fi-ca-tion était connue.
+ []
 
 [5]
 
-LaTeX Warning: Citation `Rice2000' on page 6 undefined on input line 184.
+LaTeX Warning: Citation `Guindon2009' on page 6 undefined on input line 181.
 
 
-Overfull \hbox (23.59593pt too wide) in paragraph at lines 184--185
+Overfull \hbox (23.59593pt too wide) in paragraph at lines 183--184
 \T1/futs/m/n/12 (TTCGTTG-GAA[AG]CGGGA), PJ$\FML/futmi/m/it/12 $ \T1/futs/m/n/1
 2 (TTCCTTTT[CT]CACC[AG]TAG) et pK$\FML/futmi/m/it/12 ^^L$ \T1/futs/m/n/12 (GA-T
 ATCCCGGTTTCCTT)
  []
 
-
-Overfull \hbox (40.54118pt too wide) in paragraph at lines 202--217
+[6]
+Overfull \hbox (40.54118pt too wide) in paragraph at lines 201--216
  [] 
  []
 
-[6] <img/distribution_familles.png, id=53, 707.64375pt x 652.4375pt>
+<img/distribution_familles.png, id=53, 707.64375pt x 652.4375pt>
 File: img/distribution_familles.png Graphic file (type png)
 
 <use img/distribution_familles.png>
-Package pdftex.def Info: img/distribution_familles.png used on input line 221.
+Package pdftex.def Info: img/distribution_familles.png used on input line 220.
 (pdftex.def)             Requested size: 318.43675pt x 293.59416pt.
 
 <img/ACP_experimental.png, id=54, 1156.32pt x 524.96124pt>
 File: img/ACP_experimental.png Graphic file (type png)
 
 <use img/ACP_experimental.png>
-Package pdftex.def Info: img/ACP_experimental.png used on input line 227.
+Package pdftex.def Info: img/ACP_experimental.png used on input line 226.
 (pdftex.def)             Requested size: 462.5198pt x 209.98077pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 228.
-
-LaTeX Warning: Citation `Cacheux2016' on page 7 undefined on input line 234.
-
-
-LaTeX Warning: Citation `Cacheux2018' on page 7 undefined on input line 234.
-
-
-LaTeX Warning: Citation `Cacheux2016' on page 7 undefined on input line 234.
-
-
-LaTeX Warning: Citation `Cacheux2018' on page 7 undefined on input line 234.
-
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 227.
 [7 <./img/distribution_familles.png>] [8 <./img/ACP_experimental.png>]
 <img/solatus_ACP1.png, id=64, 567.11874pt x 509.905pt>
 File: img/solatus_ACP1.png Graphic file (type png)
 
 <use img/solatus_ACP1.png>
-Package pdftex.def Info: img/solatus_ACP1.png used on input line 263.
+Package pdftex.def Info: img/solatus_ACP1.png used on input line 262.
 (pdftex.def)             Requested size: 198.49452pt x 178.46942pt.
 
 <img/pogonias_ACP1.png, id=65, 573.14125pt x 516.93124pt>
 File: img/pogonias_ACP1.png Graphic file (type png)
 
 <use img/pogonias_ACP1.png>
-Package pdftex.def Info: img/pogonias_ACP1.png used on input line 263.
+Package pdftex.def Info: img/pogonias_ACP1.png used on input line 262.
 (pdftex.def)             Requested size: 200.60243pt x 180.92863pt.
 
 <img/solatus_ACP2.png, id=66, 564.1075pt x 508.90125pt>
 File: img/solatus_ACP2.png Graphic file (type png)
 
 <use img/solatus_ACP2.png>
-Package pdftex.def Info: img/solatus_ACP2.png used on input line 264.
+Package pdftex.def Info: img/solatus_ACP2.png used on input line 263.
 (pdftex.def)             Requested size: 197.44057pt x 178.1181pt.
 
 <img/pogonias_ACP2.png, id=67, 558.085pt x 508.90125pt>
 File: img/pogonias_ACP2.png Graphic file (type png)
 
 <use img/pogonias_ACP2.png>
-Package pdftex.def Info: img/pogonias_ACP2.png used on input line 264.
+Package pdftex.def Info: img/pogonias_ACP2.png used on input line 263.
 (pdftex.def)             Requested size: 195.33267pt x 178.1181pt.
 
 <img/tree_solatus.png, id=68, 862.22125pt x 670.505pt>
 File: img/tree_solatus.png Graphic file (type png)
 
 <use img/tree_solatus.png>
-Package pdftex.def Info: img/tree_solatus.png used on input line 265.
+Package pdftex.def Info: img/tree_solatus.png used on input line 264.
 (pdftex.def)             Requested size: 215.55478pt x 167.62584pt.
 
 <img/tree_pogonias.png, id=69, 1165.35374pt x 657.45625pt>
 File: img/tree_pogonias.png Graphic file (type png)
 
 <use img/tree_pogonias.png>
-Package pdftex.def Info: img/tree_pogonias.png used on input line 265.
+Package pdftex.def Info: img/tree_pogonias.png used on input line 264.
 (pdftex.def)             Requested size: 244.7315pt x 138.06989pt.
 
-Overfull \hbox (54.9318pt too wide) in paragraph at lines 261--273
+Overfull \hbox (54.9318pt too wide) in paragraph at lines 260--272
 [][] 
  []
 
-<img/graphique_motifs.png, id=70, 649.42625pt x 593.21625pt>
+[9] [10 <./img/solatus_ACP1.png> <./img/pogonias_ACP1.png> <./img/solatus_ACP2.
+png> <./img/pogonias_ACP2.png> <./img/tree_solatus.png> <./img/tree_pogonias.pn
+g>] <img/graphique_motifs.png, id=83, 649.42625pt x 593.21625pt>
 File: img/graphique_motifs.png Graphic file (type png)
 
 <use img/graphique_motifs.png>
-Package pdftex.def Info: img/graphique_motifs.png used on input line 287.
+Package pdftex.def Info: img/graphique_motifs.png used on input line 286.
 (pdftex.def)             Requested size: 292.2391pt x 266.94484pt.
- [9] [10 <./img/solatus_ACP1.png> <./img/pogonias_ACP1.png> <./img/solatus_ACP2
-.png> <./img/pogonias_ACP2.png> <./img/tree_solatus.png> <./img/tree_pogonias.p
-ng>] [11 <./img/graphique_motifs.png>]
+ [11 <./img/graphique_motifs.png>]
 <img/hist_similarity.png, id=88, 660.4675pt x 660.4675pt>
 File: img/hist_similarity.png Graphic file (type png)
 
 <use img/hist_similarity.png>
-Package pdftex.def Info: img/hist_similarity.png used on input line 305.
+Package pdftex.def Info: img/hist_similarity.png used on input line 304.
 (pdftex.def)             Requested size: 264.18231pt x 264.18231pt.
-
-
-LaTeX Warning: Citation `Rudd2006' on page 12 undefined on input line 311.
-
-[12 <./img/hist_similarity.png>]
-Overfull \hbox (6.98643pt too wide) in paragraph at lines 323--324
+ [12]
+Overfull \hbox (6.98643pt too wide) in paragraph at lines 322--323
 []\T1/futs/m/n/12 Pour com-pa-rer les clas-si-fi-ca-tions ob-te-nues au sein de
  chaque es-pèce, une super-classification
  []
 
-<img/distribution_SF.png, id=93, 659.46375pt x 611.28375pt>
+<img/distribution_SF.png, id=92, 659.46375pt x 611.28375pt>
 File: img/distribution_SF.png Graphic file (type png)
 
 <use img/distribution_SF.png>
-Package pdftex.def Info: img/distribution_SF.png used on input line 327.
+Package pdftex.def Info: img/distribution_SF.png used on input line 326.
 (pdftex.def)             Requested size: 197.84064pt x 183.38654pt.
- [13]
-Overfull \hbox (0.68637pt too wide) in paragraph at lines 340--341
+ [13 <./img/hist_similarity.png>]
+Overfull \hbox (0.68637pt too wide) in paragraph at lines 339--340
 []\T1/futs/m/it/12 C. sa-baeus \T1/futs/m/n/12 et \T1/futs/m/it/12 M. fas-ci-cu
 -la-ris \T1/futs/m/n/12 par-tagent 38 super-familles, soit 42% des grandes supe
 r-familles
@@ -1374,71 +1311,58 @@ File: img/tree_C2_pogonias_solatus.png Graphic file (type png)
 
 <use img/tree_C2_pogonias_solatus.png>
 Package pdftex.def Info: img/tree_C2_pogonias_solatus.png used on input line 34
-6.
+5.
 (pdftex.def)             Requested size: 254.07439pt x 220.02649pt.
 
 <img/tree_C2_all_species.png, id=98, 801.99625pt x 667.49374pt>
 File: img/tree_C2_all_species.png Graphic file (type png)
 
 <use img/tree_C2_all_species.png>
-Package pdftex.def Info: img/tree_C2_all_species.png used on input line 346.
+Package pdftex.def Info: img/tree_C2_all_species.png used on input line 345.
 (pdftex.def)             Requested size: 256.64403pt x 213.60236pt.
 
-Overfull \hbox (65.24792pt too wide) in paragraph at lines 345--350
+Overfull \hbox (65.24792pt too wide) in paragraph at lines 344--349
  [] 
  []
 
-[14 <./img/distribution_SF.png>]
-<img/pkb_tree.png, id=103, 1055.945pt x 675.52374pt>
+[14 <./img/distribution_SF.png>] [15 <./img/tree_C2_pogonias_solatus.png> <./im
+g/tree_C2_all_species.png>]
+<img/pkb_tree.png, id=108, 1055.945pt x 675.52374pt>
 File: img/pkb_tree.png Graphic file (type png)
  <use img/pkb_tree.png>
-Package pdftex.def Info: img/pkb_tree.png used on input line 365.
+Package pdftex.def Info: img/pkb_tree.png used on input line 364.
 (pdftex.def)             Requested size: 422.37051pt x 270.20471pt.
 
-[15 <./img/tree_C2_pogonias_solatus.png> <./img/tree_C2_all_species.png>]
-[16 <./img/pkb_tree.png>]
-Overfull \hbox (0.20938pt too wide) in paragraph at lines 385--386
-[]\T1/futs/m/n/12 La mé-thode de clas-si-fi-ca-tion crée beau-coup de pe-tites 
-fa-milles (< 100 sé-quences). Par consé-
- []
-
-[17]
-Overfull \hbox (11.96957pt too wide) in paragraph at lines 400--401
-\T1/futs/m/n/12 fa-milles sont dé-fi-nies en une struc-ture par-ti-cu-lière, la
- ques-tion se pose de sa-voir si elles conservent
- []
-
-[18] [19]
-No file rapport.bbl.
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+[16 <./img/pkb_tree.png>] [17] [18] [19] [20] (./rapport.bbl [21]) [22]
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
-<img/algo_classification.png, id=126, 1489.565pt x 836.12375pt>
+<img/algo_classification.png, id=136, 1489.565pt x 836.12375pt>
 File: img/algo_classification.png Graphic file (type png)
 
 <use img/algo_classification.png>
-Package pdftex.def Info: img/algo_classification.png used on input line 430.
+Package pdftex.def Info: img/algo_classification.png used on input line 438.
 (pdftex.def)             Requested size: 521.35556pt x 292.64769pt.
 
-Overfull \hbox (51.88507pt too wide) in paragraph at lines 430--432
+Overfull \hbox (51.88507pt too wide) in paragraph at lines 438--440
  [] 
  []
 
-[21 <./img/algo_classification.png>] (./rapport.aux)
+[24 <./img/algo_classification.png>] (./rapport.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6476 strings out of 493105
- 86607 string characters out of 6137072
- 172755 words of memory out of 5000000
- 9700 multiletter control sequences out of 15000+600000
+ 6479 strings out of 493105
+ 86646 string characters out of 6137072
+ 173836 words of memory out of 5000000
+ 9701 multiletter control sequences out of 15000+600000
  112404 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,30p,1403b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,30p,1397b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/
 fourier/fourier-mlit.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
@@ -1447,10 +1371,10 @@ ublic/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/p
 utb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on rapport.pdf (24 pages, 4461562 bytes).
+Output written on rapport.pdf (27 pages, 4474625 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 170 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
